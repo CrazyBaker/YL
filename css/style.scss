@@ -13,6 +13,13 @@
 
 body {
   background-color: #fdfaf3;
+
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .container {
@@ -21,7 +28,7 @@ body {
 }
 
 .header {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: flex-end;
 
@@ -105,6 +112,14 @@ body {
     }
   }
 
+  &_logo-main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    //margin-top: 23px;
+    margin-bottom: 39px;
+    padding: 0;
+  }
 }
 
 .menu {
@@ -116,6 +131,7 @@ body {
   align-items: center;
   z-index: 1000;
   background-color: #fdfaf3;
+  padding: 0;
 
   font-family: "FuturaPT";
   font-weight: 400;
@@ -133,6 +149,7 @@ body {
     width: 35px;
     height: 37px;
     padding: 0;
+    margin-bottom: 41px;
   }
 
   &_title {
@@ -140,9 +157,45 @@ body {
     margin-bottom: 37px;
   }
 
+  &-lists {
+    &_wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &-list {
+
     &_item {
       margin-bottom: 17px;
+      display: block;
+      position: relative;
+      //width: max-content;
+      
+      &-link {
+        color: #595955;
+        display: block;
+
+        &:after {
+          display: block;
+          content: "";
+          background: black;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          border-bottom: solid 2px #595955;
+          transform: scaleX(0);  
+          transition: transform 0.3s;
+    
+        }
+    
+        &:hover {
+          &:after {
+            transform: scaleX(1);      
+          }
+        }
+      }
     }
   }
 
@@ -192,21 +245,22 @@ body {
 }
 
 .menu-active {
-  overflow: hidden;
+  overflow: auto;
   height: 100vh;
   opacity: 1;
   transition: height 0.4s ease-out, opacity 0.6s ease-out;
+
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
 }
 
 .main {
   margin-bottom: 75px;
-
-  &_logo {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
 
   &_image {
     display: block;
