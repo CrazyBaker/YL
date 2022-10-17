@@ -1,0 +1,395 @@
+* {
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+body {
+  background-color: #fdfaf3;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: flex-end;
+
+  &_nav-list {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 -41px;
+    padding-top: 32px;
+  }
+
+  &_nav-item {
+    margin: 0 41px;
+  }
+
+  &_nav-link {
+    position: relative;
+    display: block;
+    padding-bottom: 2px;
+    text-align: end;
+    font-family: 'FuturaPT';
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1.7px;
+    color: #595955;
+
+    &:after {
+      display: block;
+      content: "";
+      background: black;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      border-bottom: solid 2px #595955;
+      transform: scaleX(0);  
+      transition: transform 0.5s;
+
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);      
+      }
+    }
+  }
+
+  &_icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &_icon {
+    padding-right: 12px;
+    padding-top: 28px;
+    position: relative;
+  }
+
+  &_cart-counter {
+    display: flex;
+    position: absolute;
+    background-color: #ffe200;
+    color: #595955;
+    line-height: 1.2;
+    letter-spacing: 1.02px;
+    border-radius: 100%;
+    width: 21px;
+    height: 21px;
+    top: 45px;
+    left: 16px;
+    font-family: 'FuturaPT';
+    text-align: center;
+    align-items: center;
+
+    span {
+      display: block;
+      margin: 0 auto;
+      font-size: 12px;
+    }
+  }
+
+}
+
+.menu {
+  width: 150vh;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  background-color: #fdfaf3;
+
+  font-family: "FuturaPT";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 1.7px;
+  text-align: left;
+  color: #595955;
+
+  &_wrapper {
+    position: relative;
+  }
+
+  &-logo {
+    width: 35px;
+    height: 37px;
+    padding: 0;
+  }
+
+  &_title {
+    display: block;
+    margin-bottom: 37px;
+  }
+
+  &-list {
+    &_item {
+      margin-bottom: 17px;
+    }
+  }
+
+  &-sublist {
+    padding-left: 54px;
+    padding-top: 15px;
+    font-family: "FuturaPT";
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1.7px;
+    text-align: left;
+    color: #595955;
+
+    &_item {
+      margin-bottom: 17px;
+    }
+
+    &-active {
+      display: block;
+    }
+
+    &-hidden {
+      display: none;
+    }
+  }
+
+  &_img {
+    padding: 0;
+    margin-top: 59px;
+    width: 280px;
+    height: 280px;
+  }
+
+  &_wrapper {
+
+  }
+}
+
+.menu-hidden {
+  overflow: hidden;
+  height: 0vh;
+  opacity: 0;
+  transition: height 1s ease-out, opacity 0.6s ease-out;
+
+}
+
+.menu-active {
+  overflow: hidden;
+  height: 100vh;
+  opacity: 1;
+  transition: height 1s ease-out, opacity 0.6s ease-out;
+
+}
+
+.main {
+  margin-bottom: 75px;
+
+  &_logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &_image {
+    display: block;
+    max-width: 1140px;
+    max-height: 607px;
+    margin-bottom: 87px;
+  }
+}
+
+.promo {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  &_item {
+    display: flex;
+    width: 555px;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #fdfaf3;
+    font-family: 'FuturaPT';
+
+    &-wrapper {
+
+      &_big {
+        padding-top: 19px;
+      }
+
+      &_small {
+
+        &_1 {
+          padding-bottom: 13px;
+        }
+
+        &_2 {
+          padding-top: 22px;
+        }
+      }
+    }
+
+  &-img {
+    position: absolute;
+    z-index: -1;
+  }
+
+  &-title {
+    margin: 0 auto;
+    margin-bottom: 28px;
+    font-weight:900;
+    width: 430px;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.9px;
+    padding: 0 64px;
+  }
+
+  &-text {
+    margin: 0 auto;
+    margin-bottom: 39px;
+    width: 385px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.42px; 
+  }
+
+  &-button {
+      transition: background-color 0.8s;
+      width: 130px;
+      height: 35px;
+      border-radius: 18px;
+      margin: 0 auto;
+
+      a{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: 600;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.7px;
+      text-align: center;
+      color: #fdfaf3;
+      border-radius: 18px;
+      border: solid 1px #ffe100f8;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #ffe200;
+      }
+    }
+  }
+
+    &_big {
+      background-image: url(../img/main/promo_big_img.png);
+      height: 722px;
+      grid-area: 1 / 1 / 3 / 2; 
+    }
+
+    &_small {
+
+      &_1{
+        background-image: url(../img/main/promo_img_1.png);
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      &_2 {
+        background-image: url(../img/main/promo_img_2.png);
+        grid-area: 2 / 2 / 3 / 3;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  
+  &_nav-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  &_nav-item {
+    margin: 0 21px;
+    white-space: nowrap;
+  }
+
+  &_nav-link {
+    position: relative;
+    display: block;
+    font-family: 'FuturaPT';
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 1.7px;
+    color: #595955;
+    padding-bottom: 2px;
+
+    &:after {
+      display: block;
+      content: "";
+      background: black;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      border-bottom: solid 2px #595955;
+      transform: scaleX(0);  
+      transition: transform 0.5s;
+
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);      
+      }
+    }
+  }
+
+  &_icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 3px;
+
+    :last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &_icon {
+    width: 31px;
+    height: 31px;
+    margin-right: 17px;
+  }
+}
+

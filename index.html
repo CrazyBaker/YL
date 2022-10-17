@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YELLOW LINE</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css"/>
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="row header">
+        <div class="offset-2 col-8 header_nav-list">
+          <div class="header_nav-item shopButton">
+            <a class="header_nav-link" href="#">магазин</a>
+          </div>
+          <div class="header_nav-item">
+            <a class="header_nav-link" href="#">студия</a>
+          </div>
+          <div class="header_nav-item">
+            <a class="header_nav-link" href="#">журнал</a>
+          </div>
+          <div class="header_nav-item">
+            <a class="header_nav-link" href="#">пресса о нас</a>
+          </div>
+        </div>  
+        <div class="col-2 header_icons">
+          <div class="header_icon">
+            <a href="#">
+              <img src="/img/header/heart.png" alt="Избранное" class="header_heart-icon">
+            </a>
+          </div>
+          <div class="header_icon">
+            <a href="#">
+              <img src="/img/header/profile.png" alt="Профиль" class="header_profile-icon">
+            </a>
+          </div>
+          <div class="header_icon">
+            <a href="#">
+              <img src="/img/header/cart.png" alt="Корозина" class="header_cart-icon">
+            </a>
+            <div class="header_cart-counter"><span id="counter-number">12</span></div>
+          </div>
+        </div>
+      </header>
+      <div class="row menu_wrapper">
+        <div class="row menu menu-active">
+          <img class="menu-logo col-12" src="img/menu/logo.png" alt="logo">
+          <div class="row">
+            <div class="col-2 offset-1">
+              <span class="menu_title">СОВРЕМЕННОЕ/</span>
+              <ul class="menu-list">
+                <li class="menu-list_item">Стекло</li>
+                <li class="menu-list_item">Керамика</li>
+                <li class="menu-list_item">Зеркала</li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <span class="menu_title">ВИНТАЖ/</span>
+              <ul class="menu-list">
+                <li class="menu-list_item">Посуда</li>
+                <li class="menu-list_item">Вазы</li>
+                <li class="menu-list_item">Будуар</li>
+                <li class="menu-list_item">Свет
+                  <ul class="menu-sublist sublist-active">
+                    <li class="menu-sublist_item">Настольные лампы</li>
+                    <li class="menu-sublist_item">Настенные светильники</li>
+                    <li class="menu-sublist_item">Люстры</li>
+                  </ul>
+                </li>
+                <li class="menu-list_item">Мебель</li>
+                <li class="menu-list_item">Зеркала</li>
+                <li class="menu-list_item">Другое</li>
+              </ul>
+            </div>
+            <div class="col-1">
+              <span class="menu_title">АРТ/</span>
+              <ul class="menu-list">
+                <li class="menu-list_item">Картины</li>
+                <li class="menu-list_item">Объекты</li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <span class="menu_title">УСЛУГИ/</span>
+              <ul class="menu-list">
+                <li class="menu-list_item">Примерка</li>
+                <li class="menu-list_item">Поиск вещей под заказ</li>
+              </ul>
+              <img src="img/menu/menu-image.png" alt="" class="menu_img">
+            </div>
+          </div> 
+        </div>
+      </div>
+      <section class="main row">
+        <div class="col-12 main_wrapper">
+          <div>
+          <img class="main_logo" src="/img/main/logo.png" alt="Логотип YELLOW LINE">
+          </div>
+          <div>
+          <img class="main_image" src="/img/main/main-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-12 row promo">
+          <div class="promo_item promo_item_big">
+            <div class="promo_item-wrapper_big">
+              <div class="promo_item-title">Художница <br> Тоня Каткова</div>
+              <div class="promo_item-text">
+                Свобода — это выбор. Куда бы ни несло нас ветром времени, 
+                мы возьмем туда с собой наше нутро, наши страхи и надежды. 
+                И там, в странном и чужом измерении, которое пока только 
+                грезится нам, начнем новое существование.
+              </div>
+            <div class="promo_item-button">
+              <a href="#">ПОДРОБНЕЕ</a>
+            </div>
+            </div>
+          </div>
+            <div class="promo_item promo_item_small_1">
+              <div class="promo_item-wrapper_small_1">
+                <div class="promo_item-title">Выпимши в новом цвете (желтый)</div>
+                <div class="promo_item-text">
+                  Наконец нашли идеальнное цветное <br>
+                  стекло для наших фирменных бокалов
+                </div>
+                <div class="promo_item-button">
+                  <a href="#">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+            </div>
+            <div class="promo_item promo_item_small_2">
+              <div class="promo_item-wrapper_small_2">
+                <div class="promo_item-title">Маркет Soloma 31го августа</div>
+                <div class="promo_item-text">
+                  Проводим лето в Noor Bar <br>
+                  и подготовимся к уютной осени
+                </div>
+                <div class="promo_item-button">
+                  <a href="#">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <footer class="footer row">
+          <div class="offset-2 col-8 footer_nav-list">
+            <div class="footer_nav-item">
+            <a class="footer_nav-link" href="#">контакты</a>
+          </div>
+          <div class="footer_nav-item">
+            <a class="footer_nav-link" href="#">доставка</a>
+          </div>
+          <div class="footer_nav-item">
+            <a class="footer_nav-link" href="#">политика конфиденциальности</a>
+          </div>
+          <div class="footer_nav-item">
+            <a class="footer_nav-link" href="#">сотрудничество</a>
+          </div>
+        </div>
+        
+        <div class="col-2 footer_icons">
+          <div class="footer_icon">
+            <a href="#">
+              <img src="/img/footer/VK-icon.png" alt="Вконтакте" class="footer_vk-icon">
+            </a>
+          </div>
+          <div class="footer_icon">
+            <a href="#">
+              <img src="/img/footer/telegram-icon.png" alt="Телеграм" class="footer_telegram-icon">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="/js/script.js"></script>
+</html>
