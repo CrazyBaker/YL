@@ -151,17 +151,17 @@ body {
   height: 280px;
 }
 .menu-hidden {
-  overflow: none;
+  overflow: hidden;
   height: 0vh;
   opacity: 0;
-  transition: height 1s ease-out, opacity 0.6s ease-out;
+  transition: height 0.4s ease-out, opacity 0.6s ease-out;
 }
 
 .menu-active {
-  overflow: none;
+  overflow: hidden;
   height: 100vh;
   opacity: 1;
-  transition: height 1s ease-out, opacity 0.6s ease-out;
+  transition: height 0.4s ease-out, opacity 0.6s ease-out;
 }
 
 .main {
