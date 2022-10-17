@@ -33,5 +33,4 @@ function toggleActivity() {
     }
 }
 
-console.log(menu);
 shopButton.addEventListener('click', toggleActivity);
