@@ -161,6 +161,7 @@ body {
     &_wrapper {
       display: flex;
       justify-content: space-between;
+      padding: 0;
     }
   }
 
@@ -170,24 +171,22 @@ body {
       margin-bottom: 17px;
       display: block;
       position: relative;
-      //width: max-content;
+      width: fit-content;
       
       &-link {
         color: #595955;
         display: block;
+        width: max-content;
 
         &:after {
           display: block;
           content: "";
           background: black;
-          position: absolute;
-          top: 100%;
           left: 0;
           width: 100%;
           border-bottom: solid 2px #595955;
           transform: scaleX(0);  
           transition: transform 0.3s;
-    
         }
     
         &:hover {
@@ -199,7 +198,53 @@ body {
     }
   }
 
-  &-sublist {
+  &-sublist{
+    &:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-right: 2px solid;
+      border-top: 2px solid;
+      transform: rotate(45deg);
+      left: 120%;
+      top: 50%;
+      transition: transform 1s ;
+    }
+
+    &_item {
+      margin-bottom: 17px;
+      position: relative;
+      display: block;
+      width: fit-content;
+
+      &-link {
+        color: #595955;
+        display: block;
+        width: fit-content;
+
+        &:after {
+          display: block;
+          content: "";
+          background: black;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          border-bottom: solid 2px #595955;
+          transform: scaleX(0);  
+          transition: transform 0.3s;
+        }
+    
+        &:hover {
+          &:after {
+            transform: scaleX(1);      
+          }
+        }
+      }
+    }
+  }
+
+  &_sublist-active {
     padding-left: 54px;
     padding-top: 15px;
     font-family: "FuturaPT";
@@ -210,18 +255,10 @@ body {
     letter-spacing: 1.7px;
     text-align: left;
     color: #595955;
+  }
 
-    &_item {
-      margin-bottom: 17px;
-    }
-
-    &-active {
-      display: block;
-    }
-
-    &-hidden {
-      display: none;
-    }
+  &_sublist-hidden {
+    display: none;
   }
 
   &_img {
@@ -229,10 +266,6 @@ body {
     margin-top: 59px;
     width: 280px;
     height: 280px;
-  }
-
-  &_wrapper {
-
   }
 }
 

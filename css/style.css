@@ -138,22 +138,27 @@ body::-webkit-scrollbar {
 .menu-lists_wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 .menu-list_item {
   margin-bottom: 17px;
   display: block;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .menu-list_item-link {
   color: #595955;
   display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .menu-list_item-link:after {
   display: block;
   content: "";
   background: black;
-  position: absolute;
-  top: 100%;
   left: 0;
   width: 100%;
   border-bottom: solid 2px #595955;
@@ -163,7 +168,48 @@ body::-webkit-scrollbar {
 .menu-list_item-link:hover:after {
   transform: scaleX(1);
 }
-.menu-sublist {
+.menu-sublist:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid;
+  border-top: 2px solid;
+  transform: rotate(45deg);
+  left: 120%;
+  top: 50%;
+  transition: transform 1s;
+}
+.menu-sublist_item {
+  margin-bottom: 17px;
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.menu-sublist_item-link {
+  color: #595955;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.menu-sublist_item-link:after {
+  display: block;
+  content: "";
+  background: black;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-bottom: solid 2px #595955;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.menu-sublist_item-link:hover:after {
+  transform: scaleX(1);
+}
+.menu_sublist-active {
   padding-left: 54px;
   padding-top: 15px;
   font-family: "FuturaPT";
@@ -175,13 +221,7 @@ body::-webkit-scrollbar {
   text-align: left;
   color: #595955;
 }
-.menu-sublist_item {
-  margin-bottom: 17px;
-}
-.menu-sublist-active {
-  display: block;
-}
-.menu-sublist-hidden {
+.menu_sublist-hidden {
   display: none;
 }
 .menu_img {
@@ -190,6 +230,7 @@ body::-webkit-scrollbar {
   width: 280px;
   height: 280px;
 }
+
 .menu-hidden {
   overflow: hidden;
   height: 0vh;

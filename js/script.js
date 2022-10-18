@@ -24,20 +24,33 @@ const shopButton = document.querySelector(".shopButton");
 const menu = document.querySelector(".menu");
 const headerLogoMain = document.querySelector(".header_logo-main");
 const body = document.querySelector(".body");
+const menuSublists = document.querySelectorAll(".menu-sublist");
 
-function toggleActivity() {
+function toggleMenuActivity() {
     if (menu.classList.contains('menu-active')) {
         menu.classList.remove('menu-active');
         menu.classList.add('menu-hidden');
-       // headerLogoMain.style.display = 'flex';
         body.style.overflow = 'visible';
     } else {
         menu.classList.remove('menu-hidden');
         menu.classList.add('menu-active');
-        //headerLogoMain.style.display = 'none';
         body.style.overflow = 'hidden';
     }
 }
 
-shopButton.addEventListener('click', toggleActivity);
+function toggleSubMenuActivity(e) {
+    if (e.target.nextElementSibling.classList.contains('menu_sublist-active')) {
+        e.target.nextElementSibling.classList.remove('menu_sublist-active');
+        e.target.nextElementSibling.classList.add('menu_sublist-hidden');
+    } else {
+        e.target.nextElementSibling.classList.remove('menu_sublist-hidden');
+        e.target.nextElementSibling.classList.add('menu_sublist-active');
+    }
+}
+
+shopButton.addEventListener('click', toggleMenuActivity);
+
+menuSublists.forEach(element => {
+    element.addEventListener('click', toggleSubMenuActivity);
+});
 
