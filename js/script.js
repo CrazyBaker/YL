@@ -42,9 +42,13 @@ function toggleSubMenuActivity(e) {
     if (e.target.nextElementSibling.classList.contains('menu_sublist-active')) {
         e.target.nextElementSibling.classList.remove('menu_sublist-active');
         e.target.nextElementSibling.classList.add('menu_sublist-hidden');
+        e.target.classList.remove("sublist_open");
+        e.target.classList.add("sublist_close");
     } else {
         e.target.nextElementSibling.classList.remove('menu_sublist-hidden');
         e.target.nextElementSibling.classList.add('menu_sublist-active');
+        e.target.classList.remove("sublist_close");
+        e.target.classList.add("sublist_open");
     }
 }
 

@@ -168,18 +168,6 @@ body::-webkit-scrollbar {
 .menu-list_item-link:hover:after {
   transform: scaleX(1);
 }
-.menu-sublist:before {
-  content: "";
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  border-right: 2px solid;
-  border-top: 2px solid;
-  transform: rotate(45deg);
-  left: 120%;
-  top: 50%;
-  transition: transform 1s;
-}
 .menu-sublist_item {
   margin-bottom: 17px;
   position: relative;
@@ -229,6 +217,31 @@ body::-webkit-scrollbar {
   margin-top: 59px;
   width: 280px;
   height: 280px;
+}
+
+.sublist_open:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid;
+  border-top: 2px solid;
+  transform: rotate(135deg);
+  left: 75px;
+  top: 9px;
+  transition: transform 0.4s ease-in-out;
+}
+.sublist_close:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid;
+  border-top: 2px solid;
+  transform: rotate(45deg);
+  left: 75px;
+  top: 9px;
+  transition: transform 0.4s ease-in-out;
 }
 
 .menu-hidden {

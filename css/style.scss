@@ -199,18 +199,6 @@ body {
   }
 
   &-sublist{
-    &:before {
-      content: "";
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      border-right: 2px solid;
-      border-top: 2px solid;
-      transform: rotate(45deg);
-      left: 120%;
-      top: 50%;
-      transition: transform 1s ;
-    }
 
     &_item {
       margin-bottom: 17px;
@@ -269,12 +257,43 @@ body {
   }
 }
 
+.sublist {
+  &_open {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-right: 2px solid;
+      border-top: 2px solid;
+      transform: rotate(135deg);
+      left: 75px;
+      top: 9px;
+      transition: transform 0.4s ease-in-out ;
+    }
+  }
+
+  &_close {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-right: 2px solid;
+      border-top: 2px solid;
+      transform: rotate(45deg);
+      left: 75px;
+      top: 9px;
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+}
+
 .menu-hidden {
   overflow: hidden;
   height: 0vh;
   opacity: 0;
   transition: height 0.4s ease-out, opacity 0.6s ease-out;
-
 }
 
 .menu-active {
