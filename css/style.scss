@@ -182,16 +182,15 @@ body {
           display: block;
           content: "";
           background: black;
-          left: 0;
-          width: 100%;
-          border-bottom: solid 2px #595955;
+          border-bottom: solid 1px #595955;
+          height: 1px;
           transform: scaleX(0);  
           transition: transform 0.3s;
         }
     
         &:hover {
           &:after {
-            transform: scaleX(1);      
+            transform: scaleX(1); 
           }
         }
       }
@@ -251,7 +250,8 @@ body {
 
   &_img {
     padding: 0;
-    margin-top: 59px;
+    margin-top: 60px;
+    border-radius: 100%;
     width: 280px;
     height: 280px;
   }
@@ -308,7 +308,24 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
+}
 
+.menu {
+  &_imgs {
+    img {
+      position: absolute;
+      width: 277px;
+      height: 277px;
+      border-radius: 100%;
+    }
+
+    .visible {
+      visibility: visible;
+    }
+    .invisible {
+      visibility: hidden;
+    }
+  }
 }
 
 .main {

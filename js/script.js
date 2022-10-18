@@ -58,3 +58,25 @@ menuSublists.forEach(element => {
     element.addEventListener('click', toggleSubMenuActivity);
 });
 
+
+// menu
+const menuListItems = document.querySelectorAll(".menu-list_item");
+
+function setVisible(e) {
+    const menuImg = document.querySelector(".menu_img-" + e.target.classList[1]);
+    
+    menuImg.classList.remove("invisible");
+    menuImg.classList.add("visible");
+}
+
+function setInvisible(e) {
+    const menuImg = document.querySelector(".menu_img-" + e.target.classList[1]);
+    
+    menuImg.classList.remove("visible");
+    menuImg.classList.add("invisible");
+}
+
+menuListItems.forEach(listItem => {
+    listItem.addEventListener('mouseover', setVisible);
+    listItem.addEventListener('mouseout', setInvisible);
+});
