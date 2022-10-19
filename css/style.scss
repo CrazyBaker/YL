@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: flex-end;
 
@@ -85,9 +85,11 @@ body {
   }
 
   &_icon {
-    padding-right: 12px;
-    padding-top: 28px;
+    padding-right: 7px;
+    padding-top: 26px;
     position: relative;
+    width: 34px;
+    height: 35px;
   }
 
   &_cart-counter {
@@ -101,7 +103,7 @@ body {
     width: 21px;
     height: 21px;
     top: 45px;
-    left: 16px;
+    left: 19px;
     font-family: 'FuturaPT';
     text-align: center;
     align-items: center;
@@ -118,7 +120,7 @@ body {
     position: relative;
     justify-content: center;
     //margin-top: 23px;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     padding: 0;
   }
 }
@@ -313,6 +315,7 @@ body {
 
 .menu {
   margin: 0 auto;
+
   &_imgs {
     img {
       position: absolute;
@@ -462,6 +465,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0;
+    margin: 0 -92px;
   }
 
   &_nav-item {
