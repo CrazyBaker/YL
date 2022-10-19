@@ -60,23 +60,25 @@ menuSublists.forEach(element => {
 
 
 // menu
-const menuListItems = document.querySelectorAll(".menu-list_item");
+const menuListItems = document.querySelectorAll(".menu-list_item-link");
 
-function setVisible(e) {
-    const menuImg = document.querySelector(".menu_img-" + e.target.classList[1]);
+function toggleVisible(e) {
     
-    menuImg.classList.remove("invisible");
-    menuImg.classList.add("visible");
-}
+    const menuImg = document.querySelector(".menu_img-" + e.target.classList[1]);
+    console.log(menuImg);
 
-function setInvisible(e) {
-    const menuImg = document.querySelector(".menu_img-" + e.target.classList[1]);
-    
-    menuImg.classList.remove("visible");
-    menuImg.classList.add("invisible");
+    if (menuImg.classList.contains("invisible")) {
+        menuImg.classList.remove("invisible");
+        menuImg.classList.add("visible");
+    } else {
+        menuImg.classList.remove("visible");
+        menuImg.classList.add("invisible");
+    }
 }
 
 menuListItems.forEach(listItem => {
-    listItem.addEventListener('mouseover', setVisible);
-    listItem.addEventListener('mouseout', setInvisible);
+
+    listItem.addEventListener('mouseover', toggleVisible, true);
+    listItem.addEventListener('mouseout', toggleVisible, true);
+
 });
