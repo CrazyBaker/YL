@@ -21,6 +21,7 @@ body::-webkit-scrollbar {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .header {
@@ -263,6 +264,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.menu {
+  margin: 0 auto;
+}
 .menu_imgs img {
   position: absolute;
   width: 277px;
@@ -278,6 +282,7 @@ body::-webkit-scrollbar {
 
 .main {
   margin-bottom: 75px;
+  padding: 0;
 }
 .main_image {
   display: block;

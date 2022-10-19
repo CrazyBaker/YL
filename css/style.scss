@@ -25,6 +25,7 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .header {
@@ -311,6 +312,7 @@ body {
 }
 
 .menu {
+  margin: 0 auto;
   &_imgs {
     img {
       position: absolute;
@@ -330,7 +332,7 @@ body {
 
 .main {
   margin-bottom: 75px;
-
+  padding: 0;
   &_image {
     display: block;
     max-width: 1140px;

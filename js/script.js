@@ -27,7 +27,9 @@ const body = document.querySelector(".body");
 const menuSublists = document.querySelectorAll(".menu-sublist");
 
 function toggleMenuActivity() {
-    if (menu.classList.contains('menu-active')) {
+    const isActive = menu.classList.contains('menu-active');
+
+    if (isActive) {
         menu.classList.remove('menu-active');
         menu.classList.add('menu-hidden');
         body.style.overflow = 'visible';
@@ -39,7 +41,9 @@ function toggleMenuActivity() {
 }
 
 function toggleSubMenuActivity(e) {
-    if (e.target.nextElementSibling.classList.contains('menu_sublist-active')) {
+    const isActive = e.target.nextElementSibling.classList.contains('menu_sublist-active');
+    
+    if (isActive) {
         e.target.nextElementSibling.classList.remove('menu_sublist-active');
         e.target.nextElementSibling.classList.add('menu_sublist-hidden');
         e.target.classList.remove("sublist_open");
@@ -63,11 +67,12 @@ menuSublists.forEach(element => {
 const menuListItems = document.querySelectorAll(".menu-list_item-link");
 
 function toggleVisible(e) {
-    
     const menuImg = document.querySelector(".menu_img-" + e.target.classList[1]);
-    console.log(menuImg);
+    //console.log(menuImg);
 
-    if (menuImg.classList.contains("invisible")) {
+    const isVisible = menuImg.classList.contains("invisible");
+
+    if (isVisible) {
         menuImg.classList.remove("invisible");
         menuImg.classList.add("visible");
     } else {
