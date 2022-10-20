@@ -201,12 +201,12 @@ body {
   }
 
   &-sublist{
-
     &_item {
       margin-bottom: 17px;
       position: relative;
       display: block;
       width: fit-content;
+      transition: height 0.5s;
 
       &-link {
         color: #595955;
@@ -245,10 +245,14 @@ body {
     letter-spacing: 1.7px;
     text-align: left;
     color: #595955;
+    transition: transform 0.5s;
+    transform: scaleY(1);
   }
 
   &_sublist-hidden {
-    display: none;
+   // display: none;
+    transition: height 0.5s;
+    transform: scaleY(0);
   }
 
   &_img {
@@ -322,13 +326,14 @@ body {
       width: 277px;
       height: 277px;
       border-radius: 100%;
+      transition: opacity 0.5s;
     }
 
     .visible {
-      visibility: visible;
+      opacity: 1;
     }
     .invisible {
-      visibility: hidden;
+      opacity: 0;
     }
   }
 }

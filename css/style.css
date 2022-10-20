@@ -177,6 +177,7 @@ body::-webkit-scrollbar {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  transition: height 0.5s;
 }
 .menu-sublist_item-link {
   color: #595955;
@@ -210,9 +211,12 @@ body::-webkit-scrollbar {
   letter-spacing: 1.7px;
   text-align: left;
   color: #595955;
+  transition: transform 0.5s;
+  transform: scaleY(1);
 }
 .menu_sublist-hidden {
-  display: none;
+  transition: height 0.5s;
+  transform: scaleY(0);
 }
 .menu_img {
   padding: 0;
@@ -274,12 +278,13 @@ body::-webkit-scrollbar {
   width: 277px;
   height: 277px;
   border-radius: 100%;
+  transition: opacity 0.5s;
 }
 .menu_imgs .visible {
-  visibility: visible;
+  opacity: 1;
 }
 .menu_imgs .invisible {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .main {
