@@ -216,7 +216,6 @@ body::-webkit-scrollbar {
   color: #595955;
   transition: max-height 0.5s;
   overflow: hidden;
-  box-sizing: border-box;
 }
 .menu_sublist-active {
   max-height: 500px;
