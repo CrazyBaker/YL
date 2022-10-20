@@ -150,6 +150,9 @@ body::-webkit-scrollbar {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .menu-list_item-link {
   color: #595955;
@@ -171,7 +174,7 @@ body::-webkit-scrollbar {
   transform: scaleX(1);
 }
 .menu-sublist_item {
-  margin-bottom: 17px;
+  margin: 12px 0;
   position: relative;
   display: block;
   width: -webkit-fit-content;
@@ -200,9 +203,9 @@ body::-webkit-scrollbar {
 .menu-sublist_item-link:hover:after {
   transform: scaleX(1);
 }
-.menu_sublist-active {
+.menu_sublist {
+  box-sizing: border-box;
   padding-left: 54px;
-  padding-top: 15px;
   font-family: "FuturaPT";
   font-size: 20px;
   font-weight: 300;
@@ -211,12 +214,16 @@ body::-webkit-scrollbar {
   letter-spacing: 1.7px;
   text-align: left;
   color: #595955;
-  transition: transform 0.5s;
-  transform: scaleY(1);
+  transition: max-height 0.5s;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.menu_sublist-active {
+  max-height: 500px;
 }
 .menu_sublist-hidden {
-  transition: height 0.5s;
-  transform: scaleY(0);
+  max-height: 0px;
+  box-sizing: content-box;
 }
 .menu_img {
   padding: 0;

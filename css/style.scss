@@ -175,6 +175,7 @@ body {
       display: block;
       position: relative;
       width: fit-content;
+      height: fit-content;
       
       &-link {
         color: #595955;
@@ -201,8 +202,9 @@ body {
   }
 
   &-sublist{
+
     &_item {
-      margin-bottom: 17px;
+      margin: 12px 0;
       position: relative;
       display: block;
       width: fit-content;
@@ -234,9 +236,9 @@ body {
     }
   }
 
-  &_sublist-active {
+  &_sublist {
+    box-sizing: border-box;
     padding-left: 54px;
-    padding-top: 15px;
     font-family: "FuturaPT";
     font-size: 20px;
     font-weight: 300;
@@ -245,14 +247,25 @@ body {
     letter-spacing: 1.7px;
     text-align: left;
     color: #595955;
-    transition: transform 0.5s;
-    transform: scaleY(1);
-  }
+    transition: max-height 0.5s;
+    overflow: hidden;
+    box-sizing: border-box;
 
-  &_sublist-hidden {
-   // display: none;
-    transition: height 0.5s;
-    transform: scaleY(0);
+    &-active {
+      //height: fit-content;
+      //transform: scaleY(0);
+      //height: calc(100% - 1px);
+      max-height: 500px;
+
+    }
+  
+    &-hidden {
+      //height: ;
+      //transform: scaleY(1);
+      max-height: 0px;
+      //display: none;
+      box-sizing:content-box;
+    }
   }
 
   &_img {

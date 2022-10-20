@@ -42,7 +42,7 @@ function toggleMenuActivity() {
 
 function toggleSubMenuActivity(e) {
     const isActive = e.target.nextElementSibling.classList.contains('menu_sublist-active');
-    
+
     if (isActive) {
         e.target.nextElementSibling.classList.remove('menu_sublist-active');
         e.target.nextElementSibling.classList.add('menu_sublist-hidden');
@@ -52,7 +52,7 @@ function toggleSubMenuActivity(e) {
         e.target.nextElementSibling.classList.remove('menu_sublist-hidden');
         e.target.nextElementSibling.classList.add('menu_sublist-active');
         e.target.classList.remove("sublist_close");
-        e.target.classList.add("sublist_open");
+        e.target.classList.add("sublist_open");    
     }
 }
 
@@ -85,5 +85,6 @@ menuListItems.forEach(listItem => {
 
     listItem.addEventListener('mouseover', toggleVisible, true);
     listItem.addEventListener('mouseout', toggleVisible, true);
-
 });
+
+
