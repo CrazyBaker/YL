@@ -29,16 +29,28 @@ body {
 }
 
 .header {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   display: flex;
-  justify-content: flex-end;
+
+  &_language-icon{
+    padding-top: 26px;
+
+    img{
+      width: 31px;
+      height: 31px;
+      transition: filter 0.3s;
+
+      &:hover {
+        filter: brightness(30%);
+      }
+    }
+  }
 
   &_nav-list {
     margin-top: 15px;
     display: flex;
-    justify-content: flex-start;
-    margin: 0 -41px;
-    padding-top: 32px;
+    padding-top: 15px;
+    justify-content: center;
   }
 
   &_nav-item {
@@ -85,11 +97,23 @@ body {
   }
 
   &_icon {
-    padding-right: 7px;
+    padding-right: 8px;
     padding-top: 26px;
     position: relative;
     width: 34px;
     height: 35px;
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: contrast(120%);
+    }
+  }
+
+  &_profile-icon, &_cart-icon {
+    transition: filter 0.3s;
+    &:hover {
+      filter: brightness(30%);
+    }
   }
 
   &_cart-counter {
@@ -119,9 +143,13 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-    //margin-top: 23px;
-    margin-bottom: 40px;
     padding: 0;
+    margin-bottom: 39px;
+
+    img {
+      width: 196px;
+      height: 90px; 
+    }
   }
 }
 
@@ -333,6 +361,7 @@ body {
   margin: 0 auto;
 
   &_imgs {
+    margin-top: 60px;
     img {
       position: absolute;
       width: 277px;
