@@ -1,3 +1,4 @@
+// FIXME: общий файл стилей - разбить по логическим частям
 * {
   a {
     text-decoration: none;
@@ -149,6 +150,16 @@ body {
     img {
       width: 196px;
       height: 90px; 
+    }
+
+    &_small {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      img {
+        width: 35px;
+        height: 37px;
+      }
     }
   }
 }
@@ -565,5 +576,137 @@ body {
     width: 31px;
     height: 31px;
     margin-right: 17px;
+  }
+}
+//shop
+.product-cards {
+  margin-bottom: 40px;
+}
+// FIXME: дублируются стили пофиксить это гавно 
+.shop-block_small-big {  
+  margin: 0;
+  height: 722;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "small-card-1 big-card"
+    "small-card-2 big-card";
+
+  .big-card { 
+    height: 722px;
+    position: relative;
+    padding: 0;
+    grid-area: big-card; 
+    width: fit-content;
+  }
+  .small-cards {
+    padding: 0;
+    width: fit-content;
+  }
+
+  .small-card-1 {
+    position: relative;
+    padding: 0;
+    grid-area: small-card-1;
+    margin-bottom: 30px; 
+    height: 346px;
+  }
+
+  .small-card-2 {
+    position: relative;
+    padding: 0;
+    grid-area: small-card-2; 
+    height: 346px;
+  }
+}
+
+.shop-block_big-small {  
+  margin: 0;
+  height: 722;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "big-card small-card-1"
+    "big-card small-card-2";
+
+  .big-card { 
+    height: 722px;
+    position: relative;
+    padding: 0;
+    grid-area: big-card; 
+    width: fit-content;
+  }
+  .small-cards {
+    padding: 0;
+    width: fit-content;
+  }
+
+  .small-card-1 {
+    position: relative;
+    padding: 0;
+    grid-area: small-card-1;
+    margin-bottom: 30px; 
+    height: 346px;
+  }
+
+  .small-card-2 {
+    position: relative;
+    padding: 0;
+    grid-area: small-card-2; 
+    height: 346px;
+  }
+}
+
+.card-description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffe200;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0%;
+
+  &:hover {
+    opacity: 100%;
+  }
+
+  &_title {
+    margin-bottom: 28px;
+    font-family: 'FuturaPT';
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #595955;
+  }
+
+  &_text {
+    margin-bottom: 6px;
+    font-family: 'FuturaPT';
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.42px;
+    text-align: center;
+    color: #595955;
+  }
+
+  &_price {
+    font-family: 'FuturaPT';
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.42px;
+    text-align: center;
+    color: #595955;
   }
 }

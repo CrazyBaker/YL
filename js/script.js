@@ -1,25 +1,3 @@
-// const cartCounter = document.getElementById("counter-number");
-
-// // change font in cart 
-// function changeCartFont() {
-//     if (+cartCounter.textContent > 9) {
-//         cartCounter.style.fontSize = "10px";
-//     } else {
-//         cartCounter.style.fontSize = "12px";
-//     }
-// };
-
-// changeCartFont();
-
-// let observer = new MutationObserver(changeCartFont);
-// observer.observe(cartCounter, {
-//     attributes: true,
-// });
-
-
-// setTimeout(() => cartCounter.textContent = "1", 2000);
-
-
 const shopButton = document.querySelector(".shopButton");
 const menu = document.querySelector(".menu");
 const headerLogoMain = document.querySelector(".header_logo-main");
@@ -62,14 +40,13 @@ menuSublists.forEach(element => {
     element.addEventListener('click', toggleSubMenuActivity);
 });
 
-
 // menu
 const menuListItems = document.querySelectorAll(".menu-list_item-link");
 
 function toggleVisible(e) {
-    const menuImg = document.querySelector(".menu_img-" + e.target.classList[1]);
-    //console.log(menuImg);
-
+    const category = e.target.dataset.category;
+    // FIXME: есть боооольшие сомнения по поводу поиска элемента следующим образом
+    const menuImg = document.querySelector(".menu_img-" + category);
     const isVisible = menuImg.classList.contains("invisible");
 
     if (isVisible) {
@@ -86,5 +63,3 @@ menuListItems.forEach(listItem => {
     listItem.addEventListener('mouseover', toggleVisible, true);
     listItem.addEventListener('mouseout', toggleVisible, true);
 });
-
-
