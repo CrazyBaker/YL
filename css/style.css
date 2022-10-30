@@ -500,12 +500,17 @@ body::-webkit-scrollbar {
 }
 .shop-block_small-big .big-card {
   height: 722px;
+  width: 555px;
   position: relative;
   padding: 0;
   grid-area: big-card;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.shop-block_small-big .big-card_img {
+  height: 722px;
+  width: 555px;
 }
 .shop-block_small-big .small-cards {
   padding: 0;
@@ -519,11 +524,20 @@ body::-webkit-scrollbar {
   grid-area: small-card-1;
   margin-bottom: 30px;
   height: 346px;
+  width: 555px;
+}
+.shop-block_small-big .small-card-1_img {
+  width: 555px;
+  height: 346px;
 }
 .shop-block_small-big .small-card-2 {
   position: relative;
   padding: 0;
   grid-area: small-card-2;
+  height: 346px;
+}
+.shop-block_small-big .small-card-2_img {
+  width: 555px;
   height: 346px;
 }
 
@@ -539,12 +553,17 @@ body::-webkit-scrollbar {
 }
 .shop-block_big-small .big-card {
   height: 722px;
+  width: 555px;
   position: relative;
   padding: 0;
   grid-area: big-card;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.shop-block_big-small .big-card_img {
+  height: 722px;
+  width: 555px;
 }
 .shop-block_big-small .small-cards {
   padding: 0;
@@ -558,12 +577,22 @@ body::-webkit-scrollbar {
   grid-area: small-card-1;
   margin-bottom: 30px;
   height: 346px;
+  width: 555px;
+}
+.shop-block_big-small .small-card-1_img {
+  height: 346px;
+  width: 555px;
 }
 .shop-block_big-small .small-card-2 {
   position: relative;
   padding: 0;
   grid-area: small-card-2;
   height: 346px;
+  width: 555px;
+}
+.shop-block_big-small .small-card-2_img {
+  height: 346px;
+  width: 555px;
 }
 
 .card-description {

@@ -597,10 +597,16 @@ body {
 
   .big-card { 
     height: 722px;
+    width: 555px;
     position: relative;
     padding: 0;
     grid-area: big-card; 
     width: fit-content;
+
+    &_img {
+      height: 722px;
+      width: 555px;
+    }
   }
   .small-cards {
     padding: 0;
@@ -613,6 +619,12 @@ body {
     grid-area: small-card-1;
     margin-bottom: 30px; 
     height: 346px;
+    width: 555px;
+
+    &_img {
+      width: 555px;
+      height: 346px;
+    }
   }
 
   .small-card-2 {
@@ -620,6 +632,11 @@ body {
     padding: 0;
     grid-area: small-card-2; 
     height: 346px;
+
+    &_img {
+      width: 555px;
+      height: 346px;
+    }
   }
 }
 
@@ -637,10 +654,16 @@ body {
 
   .big-card { 
     height: 722px;
+    width: 555px;
     position: relative;
     padding: 0;
     grid-area: big-card; 
     width: fit-content;
+
+    &_img {
+      height: 722px;
+      width: 555px;
+    }
   }
   .small-cards {
     padding: 0;
@@ -653,6 +676,12 @@ body {
     grid-area: small-card-1;
     margin-bottom: 30px; 
     height: 346px;
+    width: 555px;
+
+    &_img {
+      height: 346px;
+      width: 555px;
+    }
   }
 
   .small-card-2 {
@@ -660,6 +689,12 @@ body {
     padding: 0;
     grid-area: small-card-2; 
     height: 346px;
+    width: 555px;
+
+    &_img {
+      height: 346px;
+      width: 555px;
+    }
   }
 }
 
