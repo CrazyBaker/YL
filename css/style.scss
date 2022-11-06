@@ -582,7 +582,7 @@ body {
 .product-cards {
   margin-bottom: 40px;
 }
-// FIXME: дублируются стили пофиксить это гавно 
+// FIXME: дублируются стили, пофиксить это гавно 
 .shop-block_small-big {  
   margin: 0;
   height: 722;
@@ -743,5 +743,48 @@ body {
     letter-spacing: 0.42px;
     text-align: center;
     color: #595955;
+  }
+}
+
+.journal {
+
+  &-block {
+    margin-bottom: 86px;
+  }
+
+  &_element {
+    &_big {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 84px;
+
+      img {
+        width: 1139px;
+        height: 554px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &_img {
+    width: 554px;
+    height: 554px;
+    margin-bottom: 18px;
+  }
+
+  &_title {
+    font-family: 'FuturaPT';
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #595955;
+  }
+}
+
+.rounded-circle {
+  img {
+    border-radius: 100%;
   }
 }

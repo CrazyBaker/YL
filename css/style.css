@@ -637,4 +637,36 @@ body::-webkit-scrollbar {
   letter-spacing: 0.42px;
   text-align: center;
   color: #595955;
+}
+
+.journal-block {
+  margin-bottom: 86px;
+}
+.journal_element_big {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 84px;
+}
+.journal_element_big img {
+  width: 1139px;
+  height: 554px;
+  margin-bottom: 24px;
+}
+.journal_img {
+  width: 554px;
+  height: 554px;
+  margin-bottom: 18px;
+}
+.journal_title {
+  font-family: "FuturaPT";
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #595955;
+}
+
+.rounded-circle img {
+  border-radius: 100%;
 }/*# sourceMappingURL=style.css.map */
