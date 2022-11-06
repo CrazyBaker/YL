@@ -1,7 +1,7 @@
 const shopButton = document.querySelector(".shopButton");
 const menu = document.querySelector(".menu");
 const headerLogoMain = document.querySelector(".header_logo-main");
-const body = document.querySelector(".body");
+const body = document.querySelector("body");
 const menuSublists = document.querySelectorAll(".menu-sublist");
 
 function toggleMenuActivity() {
