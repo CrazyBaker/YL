@@ -788,3 +788,37 @@ body {
     border-radius: 100%;
   }
 }
+
+.studio-col {
+  &_title {
+    display: block;
+    margin-bottom: 37px;
+  
+    font-family: 'FuturaPT';
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: 1.7px;
+    text-align: left;
+    color: #595955;
+  }
+
+  &_list {
+    margin-bottom: 94px;
+  }
+
+  &_item {
+    &-link {
+      display: block;
+      margin-bottom: 15px;
+      font-family: 'FuturaPT';
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 1;
+      letter-spacing: 1.7px;
+      text-align: left;
+      color: #595955;
+    }
+  }
+}
+

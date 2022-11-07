@@ -669,4 +669,30 @@ body::-webkit-scrollbar {
 
 .rounded-circle img {
   border-radius: 100%;
+}
+
+.studio-col_title {
+  display: block;
+  margin-bottom: 37px;
+  font-family: "FuturaPT";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: 1.7px;
+  text-align: left;
+  color: #595955;
+}
+.studio-col_list {
+  margin-bottom: 94px;
+}
+.studio-col_item-link {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "FuturaPT";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: 1.7px;
+  text-align: left;
+  color: #595955;
 }/*# sourceMappingURL=style.css.map */
