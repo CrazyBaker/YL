@@ -810,6 +810,7 @@ body {
   &_item {
     &-link {
       display: block;
+      width: fit-content;
       margin-bottom: 15px;
       font-family: 'FuturaPT';
       font-size: 20px;
@@ -818,6 +819,22 @@ body {
       letter-spacing: 1.7px;
       text-align: left;
       color: #595955;
+
+      &:after {
+        display: block;
+        content: "";
+        background: black;
+        border-bottom: solid 1px #595955;
+        height: 1px;
+        transform: scaleX(0);  
+        transition: transform 0.3s;
+      }
+  
+      &:hover {
+        &:after {
+          transform: scaleX(1); 
+        }
+      }
     }
   }
 }
