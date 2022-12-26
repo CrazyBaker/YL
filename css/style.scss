@@ -806,6 +806,14 @@ body {
   &_list {
     margin-bottom: 94px;
   }
+  &_img {
+    img {
+      position: absolute;
+      width: 194px;
+      height: 194px;
+      transition: opacity 0.2s;
+    }
+  }
 
   &_item {
     &-link {
@@ -837,5 +845,19 @@ body {
       }
     }
   }
+
+  
 }
 
+// .hidden {
+//   //display: none;
+//   opacity: 100%;
+// }
+
+.visible {
+  opacity: 100%;
+}
+
+.invisible {
+  opacity: 0%;
+}

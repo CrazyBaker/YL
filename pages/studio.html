@@ -23,10 +23,10 @@
           <a class="header_nav-link" href="#">магазин</a>
         </div>
           <div class="header_nav-item">
-            <a class="header_nav-link" href="#">студия</a>
+            <a class="header_nav-link" href="../pages/studio.html">студия</a>
           </div>
         <div class="header_nav-item">
-          <a class="header_nav-link" href="#">журнал</a>
+          <a class="header_nav-link" href="../pages/journal.html">журнал</a>
         </div>
         <div class="header_nav-item">
           <a class="header_nav-link" href="#">пресса о нас</a>
@@ -187,22 +187,22 @@
         <span class="studio-col_title">ИНТЕРЬЕР/</span>
         <ul class="studio-col_list">
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Котомка</a>
+            <a data-studioCat="knapsack" class="studio-col_item-link" href="#">Котомка</a>
           </li>
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Момо Ателье</a>
+            <a data-studioCat="momo-atelier" class="studio-col_item-link" href="#">Момо Ателье</a>
           </li>
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Момо Сочи</a>
+            <a data-studioCat="momo-sochi" class="studio-col_item-link" href="#">Момо Сочи</a>
           </li>
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Сверстник кафе</a>
+            <a data-studioCat="peer-cafe" class="studio-col_item-link" href="#">Сверстник кафе</a>
           </li>
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Ровесник бар</a>
+            <a data-studioCat="coeval-bar" class="studio-col_item-link" href="#">Ровесник бар</a>
           </li>
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Лиллехаммер бар</a>
+            <a data-studioCat="lillehammer-bar" class="studio-col_item-link" href="#">Лиллехаммер бар</a>
           </li>
         </ul>
       </div>
@@ -210,13 +210,13 @@
         <span class="studio-col_title">СЕТ-ДИЗАЙН/</span>
         <ul class="studio-col_list">
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Elle girl</a>
+            <a data-studioCat="elle-girl" class="studio-col_item-link" href="#">Elle girl</a>
           </li>
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Sasha’s Birthday</a>
+            <a data-studioCat="sashas-birthday" class="studio-col_item-link" href="#">Sasha’s Birthday</a>
           </li>
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Fetiche пикник</a>
+            <a data-studioCat="fetiche-picnic" class="studio-col_item-link" href="#">Fetiche пикник</a>
           </li>
         </ul>
       </div>
@@ -224,7 +224,7 @@
         <span class="studio-col_title">ИНСТАЛЯЦИИ/</span>
         <ul class="studio-col_list">
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Говорящие улицы</a>
+            <a data-studioCat="talking-streets" class="studio-col_item-link" href="#">Говорящие улицы</a>
           </li>
         </ul>
       </div>
@@ -232,28 +232,37 @@
         <span class="studio-col_title">ПРОЦЕСС/</span>
         <ul class="studio-col_list">
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">В работе</a>
+            <a data-studioCat="in-work" class="studio-col_item-link" href="#">В работе</a>
           </li>
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Случайное</a>
+            <a data-studioCat="random"class="studio-col_item-link" href="#">Случайное</a>
           </li>
           <li class="studio-col_list-item">
-            <a class="studio-col_item-link" href="#">Наброски</a>
+            <a data-studioCat="sketches"data-studioCat="in-work" class="studio-col_item-link" href="#">Наброски</a>
           </li>
         </ul>
       </div>
       <div class="row studio-col_imgs">
-        <div class="col-3 rounded-circle studio-col_img">
-          <img src="../img/pages/studio/studio_1.png" alt="Интерьер">
+        <div class="col-3 rounded-circle studio-col_img" data-col_img="Interior">
+          <img class="studio_img-knapsack invisible" src="../img/pages/studio/studio_1.png">
+          <img class="studio_img-momo-atelier invisible" src="../img/pages/studio/studio-momoAtel.jpeg" alt="Интерьер">
+          <img class="studio_img-momo-sochi invisible" src="../img/pages/studio/momo-sochi.jpeg" alt="Интерьер">
+          <img class="studio_img-peer-cafe invisible" src="../img/pages/studio/peer-cafe.jpeg" alt="Интерьер">
+          <img class="studio_img-coeval-bar invisible" src="../img/pages/studio/coeval-bar.jpeg" alt="Интерьер">
+          <img class="studio_img-lillehammer-bar invisible" src="../img/pages/studio/lillehammer-bar.jpeg" alt="Интерьер">
         </div>
-        <div class="col-3 rounded-circle studio-col_img">
-          <img src="../img/pages/studio/studio_2.png" alt="Сет-дизайн">
+        <div class="col-3 rounded-circle studio-col_img" data-col_img="set-desing">
+          <img class="studio_img-elle-girl invisible" src="../img/pages/studio/Elle-girl.jpeg" alt="Сет-дизайн">
+          <img class="studio_img-sashas-birthday invisible" src="../img/pages/studio/sashas-birthda.jpeg" alt="Сет-дизайн">
+          <img class="studio_img-fetiche-picnic invisible" src="../img/pages/studio/fetiche-picnic.jpeg" alt="Сет-дизайн">
         </div>
-        <div class="col-3 rounded-circle studio-col_img">
-          <img src="../img/pages/studio/studio_3.png" alt="Инсталяции">
+        <div class="col-3 rounded-circle studio-col_img" data-col_img="installations">
+          <img class="studio_img-talking-streets invisible" src="../img/pages/studio/studio_3.png" alt="Инсталяции">
         </div>
-        <div class="col-3 rounded-circle studio-col_img">
-          <img src="../img/pages/studio/studio_4.png" alt="Процесс">
+        <div class="col-3 rounded-circle studio-col_img" data-col_img="process">
+          <img class="studio_img-in-work invisible" src="../img/pages/studio/studio_4.png" alt="Процесс">
+          <img class="studio_img-random invisible" src="../img/pages/studio/random.jpeg" alt="Процесс">
+          <img class="studio_img-sketches invisible" src="../img/pages/studio/sketches.jpeg" alt="Процесс">
         </div>
       </div>
     </section>

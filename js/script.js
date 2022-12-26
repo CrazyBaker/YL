@@ -42,8 +42,9 @@ menuSublists.forEach(element => {
 
 // menu
 const menuListItems = document.querySelectorAll(".menu-list_item-link");
+const studioListItems = document.querySelectorAll(".studio-col_item-link");
 
-function toggleVisible(e) {
+function toggleVisibleCategoty(e) {
     const category = e.target.dataset.category;
     // FIXME: есть боооольшие сомнения по поводу поиска элемента следующим образом
     const menuImg = document.querySelector(".menu_img-" + category);
@@ -58,8 +59,30 @@ function toggleVisible(e) {
     }
 }
 
+function toggleStudioCategoty(e) {
+    const category = e.target.dataset.studiocat;
+
+    const studioImg = document.querySelector(".studio_img-" + category);
+    const isVisible = studioImg.classList.contains("visible");
+
+    if (isVisible) {
+        studioImg.classList.remove("visible");
+        studioImg.classList.add("invisible");
+
+    } else {
+        studioImg.classList.remove("invisible");
+        studioImg.classList.add("visible");
+    }
+}
+
 menuListItems.forEach(listItem => {
 
-    listItem.addEventListener('mouseover', toggleVisible, true);
-    listItem.addEventListener('mouseout', toggleVisible, true);
+    listItem.addEventListener('mouseover', toggleVisibleCategoty, true);
+    listItem.addEventListener('mouseout', toggleVisibleCategoty, true);
+});
+
+studioListItems.forEach(listItem => {
+
+    listItem.addEventListener('mouseover', toggleStudioCategoty, true);
+    listItem.addEventListener('mouseout', toggleStudioCategoty, true);
 });

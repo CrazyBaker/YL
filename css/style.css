@@ -685,6 +685,12 @@ body::-webkit-scrollbar {
 .studio-col_list {
   margin-bottom: 94px;
 }
+.studio-col_img img {
+  position: absolute;
+  width: 194px;
+  height: 194px;
+  transition: opacity 0.2s;
+}
 .studio-col_item-link {
   display: block;
   width: -webkit-fit-content;
@@ -710,4 +716,12 @@ body::-webkit-scrollbar {
 }
 .studio-col_item-link:hover:after {
   transform: scaleX(1);
+}
+
+.visible {
+  opacity: 100%;
+}
+
+.invisible {
+  opacity: 0%;
 }/*# sourceMappingURL=style.css.map */
