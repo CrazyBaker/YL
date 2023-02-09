@@ -660,7 +660,6 @@ body::-webkit-scrollbar {
   overflow: hidden;
 }
 .journal_img {
-  transition: border-radius 0.5s;
   width: 554px;
   height: 554px;
   margin-bottom: 18px;
