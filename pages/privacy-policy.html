@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YELLOW LINE</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../normalize.css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../fonts/fonts.css"/>
+</head>
+<body>
+  <div class="container">
+    <header class="row header">
+      <div class="col-1 header_language-icon">
+        <a href="#">
+          <img src="../img/header/language-icon.svg" alt="">
+        </a>
+      </div>
+      <div class="col-8 offset-1 header_nav-list">
+        <div class="header_nav-item shopButton">
+          <a class="header_nav-link" href="#">магазин</a>
+        </div>
+          <div class="header_nav-item">
+            <a class="header_nav-link" href="../pages/studio.html">студия</a>
+          </div>
+        <div class="header_nav-item">
+          <a class="header_nav-link" href="#">журнал</a>
+        </div>
+        <div class="header_nav-item">
+          <a class="header_nav-link" href="#">пресса о нас</a>
+        </div>
+      </div>  
+      <div class="col-2 header_icons">
+        <div class="header_icon">
+          <a href="#">
+            <img src="../img/header/favorites.svg" alt="Избранное" class="header_favorites-icon">
+          </a>
+        </div>
+        <div class="header_icon">
+          <a href="#">
+            <img src="../img/header/profile-icon.svg" alt="Профиль" class="header_profile-icon">
+          </a>
+        </div>
+        <div class="header_icon">
+          <a href="#">
+            <img src="../img/header/cart-icon.svg" alt="Корозина" class="header_cart-icon">
+          </a>
+          <div class="header_cart-counter"><span id="counter-number">12</span></div>
+        </div>
+      </div>
+    </header>
+    <div class="row menu_wrapper">
+      <div class="header_logo-main_small">
+        <a href="../index.html">
+          <img src="../img/menu/logo.svg" alt="Логотип YELLOW LINE">
+        </a>
+      </div>
+      <div class="row menu menu-hidden">
+        <img class="menu-logo col-12" src="../img/menu/logo.svg" alt="logo">
+        <div class="row menu-lists_wrapper">
+          <div class="col-2">
+            <span class="menu_title">СОВРЕМЕННОЕ/</span>
+            <ul class="menu-list">
+              <li class="menu-list_item">
+                <!-- Значение дата атрибута category должно быть уникальным ! -->
+                <a class="menu-list_item-link" href="#" data-category="glass">Стекло</a>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="ceramics">Керамика</a>
+              </li>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="mirrors">Зеркала</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 offset-1">
+            <span class="menu_title">ВИНТАЖ/</span>
+            <ul class="menu-list">
+              <li class="menu-list_item">
+                <a class="menu-list_item-link menu-sublist sublist_close" href="#" data-category="tableware">Посуда</a>
+                <ul class="menu_sublist menu_sublist-hidden">
+                  <li class="menu-sublist_item">
+                    <a class="menu-list_item-link" href="../shop/shop-stemware.html" data-category="stemware">Бокалы</a>
+                  </li>
+                  <li class="menu-sublist_item">
+                    <a class="menu-list_item-link" href="#" data-category="plates">Тарелки</a>
+                  </li>
+                  <li class="menu-sublist_item">
+                    <a class="menu-list_item-link" href="#" data-category="bonbonnieres">Бонбоньерки</a>
+                  </li>
+                  <li class="menu-sublist_item">
+                    <a class="menu-list_item-link" href="#" data-category="vases">Вазочки</a>
+                  </li>
+                  <li class="menu-sublist_item">
+                    <a class="menu-list_item-link" href="#" data-category="tea">Чайное</a>
+                  </li>
+                  <li class="menu-sublist_item">
+                    <a class="menu-list_item-link" href="#" data-category="tableware-other">Другое</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="../shop/shop-vase.html" data-category="water-glass">Вазы</a>
+              </li>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="boudoir">Будуар</a>    
+              </li>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link menu-sublist sublist_close" href="#" data-category="light">Свет</a>
+                <ul class="menu_sublist menu_sublist-hidden">
+                  <li class="menu-sublist_item">
+                    <a class="menu-list_item-link" href="#" data-category="desk-lamp">Настольные лампы</a>
+                  </li>
+                  <li class="menu-sublist_item">
+                    <a class="menu-list_item-link" href="#" data-category="wall-lights">Настенные светильники</a>
+                  </li>
+                  <li class="menu-sublist_item">
+                    <a class="menu-list_item-link" href="#" data-category="сhandeliers">Люстры</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="furniture">Мебель</a>
+              </li>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="vintage-mirrors">Зеркала</a>
+              </li>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="vintage-other">Другое</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <span class="menu_title">АРТ/</span>
+            <ul class="menu-list">
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="paintings">Картины</a>
+              </li>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="objects">Объекты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <span class="menu_title">УСЛУГИ/</span>
+            <ul class="menu-list">
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="fitting">Примерка</a>
+              </li>
+              <li class="menu-list_item">
+                <a class="menu-list_item-link" href="#" data-category="search-hings">Поиск вещей под заказ</a>
+              </li>
+            </ul>
+            <div class="menu_imgs">
+              <!-- значение menu_img-* должно соответствовать уникальному значению data-category, элементов с классом menu-list_item-link -->
+              <img class="menu_img-glass invisible" src="../img/menu/menu-categories/glass.png" alt="">
+              <img class="menu_img-ceramics invisible" src="../img/menu/menu-categories/ceramics.jpeg" alt="">
+              <img class="menu_img-mirrors invisible" src="../img/menu/menu-categories/mirrors.jpeg" alt="">
+              <img class="menu_img-tableware invisible" src="../img/menu/menu-categories/tableware.jpeg" alt="">
+              <img class="menu_img-stemware invisible" src="../img/menu/menu-categories/stemware.jpeg" alt="">
+              <img class="menu_img-plates invisible" src="../img/menu/menu-categories/plates.jpeg" alt="">
+              <img class="menu_img-bonbonnieres invisible" src="../img/menu/menu-categories/bonbonnieres.jpeg" alt="">
+              <img class="menu_img-vases invisible" src="../img/menu/menu-categories/vases.jpeg" alt="">
+              <img class="menu_img-tea invisible" src="../img/menu/menu-categories/tea.jpeg" alt="">
+              <img class="menu_img-tableware-other invisible" src="../img/menu/menu-categories/other.jpg" alt="">
+              <img class="menu_img-water-glass invisible" src="../img/menu/menu-categories/water-glass.jpeg" alt="">
+              <img class="menu_img-boudoir invisible" src="../img/menu/menu-categories/boudoir.jpeg" alt="">
+              <img class="menu_img-light invisible" src="../img/menu/menu-categories/light.jpeg" alt="">
+              <img class="menu_img-desk-lamp invisible" src="../img/menu/menu-categories/desk-lamp.jpeg" alt="">
+              <img class="menu_img-wall-lights invisible" src="../img/menu/menu-categories/wall-lights.jpeg" alt="">
+              <img class="menu_img-сhandeliers invisible" src="../img/menu/menu-categories/сhandeliers.jpeg" alt="">
+              <img class="menu_img-furniture invisible" src="../img/menu/menu-categories/furniture.jpeg" alt="">
+              <img class="menu_img-vintage-mirrors invisible" src="../img/menu/menu-categories/vintage-mirrors.jpeg" alt="">
+              <img class="menu_img-vintage-other invisible" src="../img/menu/menu-categories/vintage-other.webp" alt="">
+              <img class="menu_img-paintings invisible" src="../img/menu/menu-categories/paintings.jpeg" alt="">
+              <img class="menu_img-objects invisible" src="../img/menu/menu-categories/objects.jpeg" alt="">
+              <img class="menu_img-fitting invisible" src="../img/menu/menu-categories/fitting.jpeg" alt="">
+              <img class="menu_img-search-hings invisible" src="../img/menu/menu-categories/search-hings.webp" alt="">
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="privacy-policy">
+      <div class="privacy-policy_title">Политика конфиденциальности/</div>
+      <div class="privacy-policy_outline">определения</div>
+      <pre class="privacy-policy_text">
+1.	Продавец / Оператор — ИП Иванова Н.В.  (ИНН 504106873895, адрес местонахождения: 
+      105062, г. Москва, ул. Покровка, 31с2, кв. 35 ком. 4).
+2.	Интернет-магазин — Интернет-сайт Yellow Line Shop, расположенный в сети интернет по адресу: 
+      www.yellowline.shop (далее — Сайт), принадлежащий Продавцу, где представлены товары, 
+      предлагаемые Продавцом для приобретения, а также условия оплаты и доставки и возвратов товаров.
+3.	Субъекты персональных данных:
+      Посетитель Интернет-магазина Yellow Line Shop — физическое лицо, посетившее Cайт без цели заключения 
+      договора купли-продажи;
+      Пользователь — физическое лицо, посетитель Интернет-магазина Yellow Line Shop, принимающий условия       
+      публичной оферты, размещенной в интернет-магазине Yellow Line Shop и желающий разместить заказ 
+      в Интернет-магазине Yellow Line Shop;
+      Покупатель — пользователь, разместивший заказ в Интернет-магазине Yellow Line Shop.
+4.	Персональные данные — информация, сохраненная в любом формате, относящаяся к определенному 
+      или определяемому на основании такой информации физическому лицу (субъекту персональных данных), 
+      которая сама по себе или в сочетании с другой информацией, имеющейся в распоряжении Интернет-магазина        
+      Yellow Line Shop, позволяет идентифицировать личность субъекта персональных данных.
+5.	Обработка персональных данных — действия (операции) с персональными данными, включая сбор, запись, 
+      систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, 
+      распространение (в том числе передачу), обезличивание, блокирование, уничтожение персональных данных.
+6.	Распространение персональных данных — действия, направленные на передачу персональных данных 
+      определенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными 
+      неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой             
+      информации, размещение в информационно- телекоммуникационных сетях или предоставление доступа 
+      к персональным данным каким-либо иным способом.
+7.	Использование персональных данных — действия (операции) с персональными данными, совершаемые 
+      оператором в целях принятия решений или совершения иных действий, порождающих юридические последствия 
+      в отношении субъекта персональных данных или других лиц либо иным образом затрагивающих права 
+      и свободы субъекта персональных данных или других лиц.
+      </pre>
+      <div class="privacy-policy_outline">ОБЩИЕ ПОЛОЖЕНИЯ</div>
+      
+    <footer class="footer row">
+      <div class="offset-1 col-9 footer_nav-list">
+        <div class="footer_nav-item">
+        <a class="footer_nav-link" href="#">контакты</a>
+      </div>
+      <div class="footer_nav-item">
+        <a class="footer_nav-link" href="#">доставка</a>
+      </div>
+      <div class="footer_nav-item">
+        <a class="footer_nav-link" href="#">политика конфиденциальности</a>
+      </div>
+      <div class="footer_nav-item">
+        <a class="footer_nav-link" href="#">сотрудничество</a>
+      </div>
+      </div>  
+      <div class="col-2 footer_icons">
+      <div class="footer_icon">
+        <a href="#">
+          <img src="../img/footer/VK-icon.svg" alt="Вконтакте" class="footer_vk-icon">
+        </a>
+      </div>
+      <div class="footer_icon">
+        <a href="#">
+          <img src="../img/footer/telegram-icon.svg" alt="Телеграм" class="footer_telegram-icon">
+        </a>
+      </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

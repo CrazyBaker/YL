@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YELLOW LINE</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../normalize.css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../fonts/fonts.css"/>
+</head>
+<body>
+  <div class="container">
+    <header class="row header">
+      <div class="col-1 header_language-icon">
+        <a href="#">
+          <img src="../img/header/language-icon.svg" alt="">
+        </a>
+      </div>
+      <div class="col-8 offset-1 header_nav-list">
+        <div class="header_nav-item shopButton">
+          <a class="header_nav-link" href="#">магазин</a>
+        </div>
+          <div class="header_nav-item">
+            <a class="header_nav-link" href="../pages/studio.html">студия</a>
+          </div>
+        <div class="header_nav-item">
+          <a class="header_nav-link" href="#">журнал</a>
+        </div>
+        <div class="header_nav-item">
+          <a class="header_nav-link" href="#">пресса о нас</a>
+        </div>
+      </div>  
+      <div class="col-2 header_icons">
+        <div class="header_icon">
+          <a href="#">
+            <img src="../img/header/favorites.svg" alt="Избранное" class="header_favorites-icon">
+          </a>
+        </div>
+        <div class="header_icon">
+          <a href="#">
+            <img src="../img/header/profile-icon.svg" alt="Профиль" class="header_profile-icon">
+          </a>
+        </div>
+        <div class="header_icon">
+          <a href="#">
+            <img src="../img/header/cart-icon.svg" alt="Корозина" class="header_cart-icon">
+          </a>
+          <div class="header_cart-counter"><span id="counter-number">12</span></div>
+        </div>
+      </div>
+    </header>
+    <div class="header_logo-main_small">
+      <a href="../index.html">
+        <img src="../img/menu/logo.svg" alt="Логотип YELLOW LINE">
+      </a>
+    </div>
+    <section class="cart">
+      <div class="empty-block hidden">
+        <div class="empty-block_title">корзина/</div>
+        <a href="../shop/shop-vase.html">
+          <div class="empty-block_shop-link">перейти в магазин</div>
+        </a>
+      </div>
+      <div class="cart_title">корзина/3</div>
+      <ul class="cart_items">
+        <li class="cart_item">
+          <img class="cart_item-img" src="../img/pages/cart/cart-item1.png" alt="">
+          <div class="cart_item-description">
+            <div class="cart_item-description_title">Ваза из муранского стекла</div>
+            <div class="cart_item-description_country">Италия, 1960/70-е</div>
+            <div class="cart_item-description_size">Высота: 17 см</div>
+            <div class="cart_item-description_count">
+              <div class="cart_item-description_decrease"><p>-</p></div>
+              <div class="cart_item-description_count-value">2</div>
+              <div class="cart_item-description_increase"><p>+</p></div>
+            </div>
+          </div>
+          <div class="cart_item-price">9 000 ⃏</div>
+        </li>
+        <li class="cart_item">
+          <img class="cart_item-img" src="../img/pages/cart/cart-item2.png" alt="">
+          <div class="cart_item-description">
+            <div class="cart_item-description_title">Гипсовая настенная плакетка</div>
+            <div class="cart_item-description_country">30-е годы</div>
+            <div class="cart_item-description_size">Размер: 24х18 см</div>
+            <div class="cart_item-description_count">
+              <div class="cart_item-description_decrease"><p>-</p></div>
+              <div class="cart_item-description_count-value">1</div>
+              <div class="cart_item-description_increase"><p>+</p></div>
+            </div>
+          </div>
+          <div class="cart_item-price">6 500 ⃏</div>
+        </li>
+      </ul>
+      <div class="cart_line"></div>
+      <div class="cart_promo-price" >
+        <input type="text" placeholder="Введите промо-код" class="cart_promocode"></input>
+        <div class="cart_total-price">Итого: 15 500 ⃏</div>
+      </div>
+        <div class="order">
+          <div class="order_title">ОФОРМЛЕНИЕ ЗАКАЗА</div>
+          <ul class="order_form">
+            <li class="order_form-block">
+              <div class="order_item">
+                <div class="order_label">Способ оплаты:</div>
+                <input type="text" class="order_input" placeholder="Наличные"></input>
+              </div>
+              <div class="order_item">
+                <div class="order_label">Получение заказа:</div>
+                <input type="text" class="order_input" placeholder="Самовывоз"></input>
+              </div>
+              <div class="order_button">
+                <div class="cart_checkout_small">оформить заказ</div>
+              </div>
+            </li>
+            <li class="order_form-block">
+              <div>
+                <div class="order_label">Почтовый адрес:</div>
+                <input type="text" class="order_input" placeholder="olja.sunny@rambler.ru"></input>
+              </div>
+              <div class="order_subscribe">
+                <input id="subscribe" type="checkbox" class="order_checkbox">
+                <label for="subscribe">Подписаться на новости и эксклюзивные предложения</label>
+              </div>
+              <div>
+                <div class="order_label">ФИО Клиента:</div>
+                <input type="text" class="order_input" placeholder="Введите ФИО"></input>
+              </div>
+              <div>
+                <div class="order_label">Номер телефона:</div>
+                <input type="text" class="order_input" placeholder="Введите номер телефона"></input>
+              </div>
+            </li>
+          </ul>
+        </div>
+      <div class="recomendation">
+        <div class="recomendation_title">Возможно, вам понравится</div>
+        <div class="recomendation_items">
+          <div class="recomendation_item">
+            <img src="../img/pages/cart/recomendation1.png" alt="" class="recomendation_item-img">
+            <div class="recomendation_item-title">Розовая ваза<br> из опалового стекла #1</div>
+            <div class="recomendation_item-country">Италия</div>
+            <div class="recomendation_item-price">12 890 ⃏</div>
+          </div>
+          <div class="recomendation_item">
+            <img src="../img/pages/cart/recomendation2.png" alt="" class="recomendation_item-img">
+            <div class="recomendation_item-title">Ваза из молочного стекла</div>
+            <div class="recomendation_item-country">США, 1940е</div>
+            <div class="recomendation_item-price">9 400 ⃏</div>
+          </div>
+          <div class="recomendation_item">
+            <img src="../img/pages/cart/recomendation3.png" alt="" class="recomendation_item-img">
+            <div class="recomendation_item-title">Розовая ваза<br> из опалового стекла #1</div>
+            <div class="recomendation_item-country">Италия</div>
+            <div class="recomendation_item-price">12 890 ⃏</div>
+          </div>
+          <div class="recomendation_item">
+            <img src="../img/pages/cart/recomendation4.png" alt="" class="recomendation_item-img">
+            <div class="recomendation_item-title">Ваза из молочного стекла</div>
+            <div class="recomendation_item-country">США, 1940е</div>
+            <div class="recomendation_item-price">9 400 ⃏</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer row">
+      <div class="offset-1 col-9 footer_nav-list">
+        <div class="footer_nav-item">
+        <a class="footer_nav-link" href="#">контакты</a>
+      </div>
+      <div class="footer_nav-item">
+        <a class="footer_nav-link" href="#">доставка</a>
+      </div>
+      <div class="footer_nav-item">
+        <a class="footer_nav-link" href="#">политика конфиденциальности</a>
+      </div>
+      <div class="footer_nav-item">
+        <a class="footer_nav-link" href="#">сотрудничество</a>
+      </div>
+      </div>  
+      <div class="col-2 footer_icons">
+      <div class="footer_icon">
+        <a href="#">
+          <img src="../img/footer/VK-icon.svg" alt="Вконтакте" class="footer_vk-icon">
+        </a>
+      </div>
+      <div class="footer_icon">
+        <a href="#">
+          <img src="../img/footer/telegram-icon.svg" alt="Телеграм" class="footer_telegram-icon">
+        </a>
+      </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
