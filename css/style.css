@@ -642,6 +642,9 @@ body::-webkit-scrollbar {
 .journal-block {
   margin-bottom: 86px;
 }
+.journal_element {
+  transition: border-radius 0.15s;
+}
 .journal_element_big {
   display: flex;
   flex-direction: column;
@@ -652,7 +655,12 @@ body::-webkit-scrollbar {
   height: 554px;
   margin-bottom: 24px;
 }
+.journal_element:hover .journal_img {
+  border-radius: 100%;
+  overflow: hidden;
+}
 .journal_img {
+  transition: border-radius 0.5s;
   width: 554px;
   height: 554px;
   margin-bottom: 18px;
