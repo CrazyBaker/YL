@@ -1032,6 +1032,7 @@ body {
   flex-direction: row;
   margin-top: 82px;
   padding: 0;
+  flex-wrap: nowrap;
 
   &_description {
     padding: 0;
@@ -1056,11 +1057,10 @@ body {
   &_map-img {
     padding: 0;
     margin-top: 32px;
-    width: 470px;
-    height: 470px;
+    width: 480px;
+    height: 480px;
     border-radius: 100%;
-    background-image: url(../img/pages/contacts/map.png);
-    cursor: pointer;
+    overflow: hidden;
   }
 }
 
@@ -1102,11 +1102,14 @@ body {
   &_items {
     display: flex;
     margin-top: 64px;
-    margin-left: 4px;
+    padding: 0;
+    margin-left: 0;
+    width: 1200px;
   }
   &_item {
     width: 240px;
-    margin-right: 65px;
+    margin-right: 50px;
+    padding: 0;
     &-title {
       margin-top: 40px;
       font-family: FuturaPT;
@@ -1497,5 +1500,22 @@ body {
     text-align: left;
     color: #595955;
     margin-bottom: 10px;
+  }
+}
+
+.sing-up {
+  &_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "FuturaPT";
+    font-size: 20px;
+    margin-bottom: 37px;
+    letter-spacing: 1.7px;
+  }
+  &_form {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    margin: 0 auto;
   }
 }
