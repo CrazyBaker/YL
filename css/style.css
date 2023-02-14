@@ -1160,6 +1160,9 @@ body::-webkit-scrollbar {
   padding-left: 33px;
   background-color: #fdfaf3;
 }
+.order_select {
+  margin-bottom: 10px;
+}
 .order_button {
   margin-top: 125px;
 }
