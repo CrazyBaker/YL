@@ -698,6 +698,14 @@ body {
   }
 }
 
+.yelow-hover {
+  background-color: #ffe200;
+}
+
+.pink-hover {
+  background-color: #f8c3d9;
+}
+
 .card-description {
   position: absolute;
   display: flex;
@@ -706,7 +714,6 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #ffe200;
   transition: opacity 0.3s ease-in-out;
   opacity: 0%;
 
