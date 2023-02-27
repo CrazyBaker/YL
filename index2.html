@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YELLOW LINE</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/css-for-index2.css"/>
+    <link rel="stylesheet" href="fonts/fonts.css"/>
+  </head>
+  <body class="body">
+    <div class="container">
+      <header class="row header">
+        <div class="col-1 header_language-icon">
+          <a href="#">
+            <img src="img/header/language-icon.svg" alt="">
+          </a>
+        </div>
+        <div class="col-8 offset-1 header_nav-list">
+          <div class="header_nav-item shopButton">
+            <a class="header_nav-link" href="#">магазин</a>
+          </div>
+          <div class="header_nav-item">
+            <a class="header_nav-link" href="pages/studio.html">студия</a>
+          </div>
+          <div class="header_nav-item">
+            <a class="header_nav-link" href="pages/journal.html">журнал</a>
+          </div>
+          <div class="header_nav-item">
+            <a class="header_nav-link" href="#">пресса о нас</a>
+          </div>
+        </div>  
+        <div class="col-2 header_icons">
+          <div class="header_icon">
+            <a href="#">
+              <img src="img/header/favorites.svg" alt="Избранное" class="header_favorites-icon">
+            </a>
+          </div>
+          <div class="header_icon">
+            <a href="#">
+              <img src="img/header/profile-icon.svg" alt="Профиль" class="header_profile-icon">
+            </a>
+          </div>
+          <div class="header_icon">
+            <a href="#">
+              <img src="img/header/cart-icon.svg" alt="Корозина" class="header_cart-icon">
+            </a>
+            <div class="header_cart-counter"><span id="counter-number">12</span></div>
+          </div>
+        </div>
+      </header>
+      <div class="row menu_wrapper">
+        <div class="header_logo-main">
+          <img src="img/header/logo.svg" alt="Логотип YELLOW LINE">
+        </div>
+        <div class="row menu menu-hidden">
+          <img class="menu-logo col-12" src="img/menu/logo.svg" alt="logo">
+          <div class="row menu-lists_wrapper">
+            <div class="col-2">
+              <span class="menu_title">СОВРЕМЕННОЕ/</span>
+              <ul class="menu-list">
+                <li class="menu-list_item">
+                  <!-- Значение дата атрибута category должно быть уникальным ! -->
+                  <a class="menu-list_item-link" href="#" data-category="glass">Стекло</a>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="ceramics">Керамика</a>
+                </li>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="mirrors">Зеркала</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3 offset-1">
+              <span class="menu_title">ВИНТАЖ/</span>
+              <ul class="menu-list">
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link menu-sublist sublist_close" href="#" data-category="tableware">Посуда</a>
+                  <ul class="menu_sublist menu_sublist-hidden">
+                    <li class="menu-sublist_item">
+                      <a class="menu-list_item-link" href="shop/shop-stemware.html" data-category="stemware">Бокалы</a>
+                    </li>
+                    <li class="menu-sublist_item">
+                      <a class="menu-list_item-link" href="#" data-category="plates">Тарелки</a>
+                    </li>
+                    <li class="menu-sublist_item">
+                      <a class="menu-list_item-link" href="#" data-category="bonbonnieres">Бонбоньерки</a>
+                    </li>
+                    <li class="menu-sublist_item">
+                      <a class="menu-list_item-link" href="#" data-category="vases">Вазочки</a>
+                    </li>
+                    <li class="menu-sublist_item">
+                      <a class="menu-list_item-link" href="#" data-category="tea">Чайное</a>
+                    </li>
+                    <li class="menu-sublist_item">
+                      <a class="menu-list_item-link" href="#" data-category="tableware-other">Другое</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="shop/shop-vase.html" data-category="water-glass">Вазы</a>
+                </li>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="boudoir">Будуар</a>    
+                </li>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link menu-sublist sublist_close" href="#" data-category="light">Свет</a>
+                  <ul class="menu_sublist menu_sublist-hidden">
+                    <li class="menu-sublist_item">
+                      <a class="menu-list_item-link" href="#" data-category="desk-lamp">Настольные лампы</a>
+                    </li>
+                    <li class="menu-sublist_item">
+                      <a class="menu-list_item-link" href="#" data-category="wall-lights">Настенные светильники</a>
+                    </li>
+                    <li class="menu-sublist_item">
+                      <a class="menu-list_item-link" href="#" data-category="сhandeliers">Люстры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="furniture">Мебель</a>
+                </li>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="vintage-mirrors">Зеркала</a>
+                </li>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="vintage-other">Другое</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <span class="menu_title">АРТ/</span>
+              <ul class="menu-list">
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="paintings">Картины</a>
+                </li>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="objects">Объекты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <span class="menu_title">УСЛУГИ/</span>
+              <ul class="menu-list">
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="fitting">Примерка</a>
+                </li>
+                <li class="menu-list_item">
+                  <a class="menu-list_item-link" href="#" data-category="search-hings">Поиск вещей под заказ</a>
+                </li>
+              </ul>
+              <div class="menu_imgs">
+                <!-- значение menu_img-* должно соответствовать уникальному значению data-category, элементов с классом menu-list_item-link -->
+                <img class="menu_img-glass invisible" src="img/menu/menu-categories/glass.png" alt="">
+                <img class="menu_img-ceramics invisible" src="img/menu/menu-categories/ceramics.jpeg" alt="">
+                <img class="menu_img-mirrors invisible" src="img/menu/menu-categories/mirrors.jpeg" alt="">
+                <img class="menu_img-tableware invisible" src="img/menu/menu-categories/tableware.jpeg" alt="">
+                <img class="menu_img-stemware invisible" src="img/menu/menu-categories/stemware.jpeg" alt="">
+                <img class="menu_img-plates invisible" src="img/menu/menu-categories/plates.jpeg" alt="">
+                <img class="menu_img-bonbonnieres invisible" src="img/menu/menu-categories/bonbonnieres.jpeg" alt="">
+                <img class="menu_img-vases invisible" src="img/menu/menu-categories/vases.jpeg" alt="">
+                <img class="menu_img-tea invisible" src="img/menu/menu-categories/tea.jpeg" alt="">
+                <img class="menu_img-tableware-other invisible" src="img/menu/menu-categories/other.jpg" alt="">
+                <img class="menu_img-water-glass invisible" src="img/menu/menu-categories/water-glass.jpeg" alt="">
+                <img class="menu_img-boudoir invisible" src="img/menu/menu-categories/boudoir.jpeg" alt="">
+                <img class="menu_img-light invisible" src="img/menu/menu-categories/light.jpeg" alt="">
+                <img class="menu_img-desk-lamp invisible" src="img/menu/menu-categories/desk-lamp.jpeg" alt="">
+                <img class="menu_img-wall-lights invisible" src="img/menu/menu-categories/wall-lights.jpeg" alt="">
+                <img class="menu_img-сhandeliers invisible" src="img/menu/menu-categories/сhandeliers.jpeg" alt="">
+                <img class="menu_img-furniture invisible" src="img/menu/menu-categories/furniture.jpeg" alt="">
+                <img class="menu_img-vintage-mirrors invisible" src="img/menu/menu-categories/vintage-mirrors.jpeg" alt="">
+                <img class="menu_img-vintage-other invisible" src="img/menu/menu-categories/vintage-other.webp" alt="">
+                <img class="menu_img-paintings invisible" src="img/menu/menu-categories/paintings.jpeg" alt="">
+                <img class="menu_img-objects invisible" src="img/menu/menu-categories/objects.jpeg" alt="">
+                <img class="menu_img-fitting invisible" src="img/menu/menu-categories/fitting.jpeg" alt="">
+                <img class="menu_img-search-hings invisible" src="img/menu/menu-categories/search-hings.webp" alt="">
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <section class="main row">
+        <div class="col-12 main_wrapper">
+          <div class="row promo">
+            <div class="col-12 promo_preview">
+              <img src="./img/main/main-img.png" alt="">
+            </div>
+              <div class="col-6 promo_item promo_item_small">
+                <div class="promo_item-title">Выпимши в новом цвете (желтый)</div>
+                <div class="promo_item-text">Наконец нашли идеальнное цветное стекло для наших фирменных бокалов</div>
+                <img src="./img/main/main2.png" alt="" class="promo_item-img">
+                <div class="promo_item-button">
+                  <a href="#">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+              <div class="col-6 promo_item promo_item_small">
+                <div class="promo_item-title">Маркет Soloma 31го августа</div>
+                <div class="promo_item-text">Как интегрировать декоративно-прикладное искусство в современный интерьер</div>
+                <img src="./img/main/main3.png" alt="" class="promo_item-img">
+                <div class="promo_item-button">
+                  <a href="#">ПОДРОБНЕЕ</a>
+                </div>
+              </div>
+            <div class="col-12 promo_item promo_item_big">
+              <div class="promo_item-title">Художница Тоня Каткова</div>
+              <div class="promo_item-text">
+                Свобода — это выбор. Куда бы ни несло нас ветром времени, 
+                мы возьмем туда с собой наше нутро, наши страхи и надежды. <br>
+                И там, в странном и чужом измерении, которое пока только 
+                грезится нам, начнем новое существование.
+              </div>
+                <img src="./img/main/main_img_4.png" alt="" class="promo_item-img">        
+              <div class="promo_item-button">
+                <a href="#">ПОДРОБНЕЕ</a>
+              </div>            
+            </div>
+              <!-- <div class="row">
+                <div class="promo_item promo_item_small_1 col-6">
+                  <div class="promo_item-wrapper_small_1">
+                    <div class="promo_item-title">Выпимши в новом цвете (желтый)</div>
+                    <div class="promo_item-text">
+                      Наконец нашли идеальнное цветное <br>
+                      стекло для наших фирменных бокалов
+                    </div>
+                    <div class="promo_item-button">
+                      <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="promo_item promo_item_small_2 col-6">
+                  <div class="promo_item-wrapper_small_2">
+                    <div class="promo_item-title">Маркет Soloma 31го августа</div>
+                    <div class="promo_item-text">
+                      Проводим лето в Noor Bar <br>
+                      и подготовимся к уютной осени
+                    </div>
+                    <div class="promo_item-button">
+                      <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+          </div>
+        </div>      
+      </section>
+      <footer class="footer row">
+          <div class="offset-1 col-9 footer_nav-list">
+            <div class="footer_nav-item">
+            <a class="footer_nav-link" href="#">контакты</a>
+          </div>
+          <div class="footer_nav-item">
+            <a class="footer_nav-link" href="#">доставка</a>
+          </div>
+          <div class="footer_nav-item">
+            <a class="footer_nav-link" href="#">политика конфиденциальности</a>
+          </div>
+          <div class="footer_nav-item">
+            <a class="footer_nav-link" href="#">сотрудничество</a>
+          </div>
+        </div>
+        
+        <div class="col-2 footer_icons">
+          <div class="footer_icon">
+            <a href="#">
+              <img src="img/footer/VK-icon.svg" alt="Вконтакте" class="footer_vk-icon">
+            </a>
+          </div>
+          <div class="footer_icon">
+            <a href="#">
+              <img src="img/footer/telegram-icon.svg" alt="Телеграм" class="footer_telegram-icon">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
