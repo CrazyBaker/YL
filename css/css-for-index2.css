@@ -12,6 +12,7 @@
 }
 .promo_preview {
   padding: 0;
+  margin-bottom: 80px;
 }
 .promo_item {
   display: flex;
