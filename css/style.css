@@ -32,6 +32,10 @@ body::-webkit-scrollbar {
   min-height: calc(100vh - 80px);
 }
 
+.content {
+  min-height: calc(100vh - 210px);
+}
+
 .header {
   margin-bottom: 23px;
   display: flex;

@@ -35,7 +35,10 @@ body {
   min-height: 100%;
   box-sizing: border-box;
   min-height: calc(100vh - 80px);
+}
 
+.content {
+  min-height: calc(100vh - 210px);
 }
 
 .header {
