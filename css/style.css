@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
 * a {
   text-decoration: none;
   color: #fff;
@@ -13,6 +17,7 @@ body {
   background-color: #fdfaf3;
   -ms-overflow-style: none; /* IE и Edge */
   scrollbar-width: none; /* Firefox */
+  height: 100%;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -22,6 +27,9 @@ body::-webkit-scrollbar {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0;
+  min-height: 100%;
+  box-sizing: border-box;
+  min-height: calc(100vh - 80px);
 }
 
 .header {
@@ -179,17 +187,14 @@ body::-webkit-scrollbar {
   margin-bottom: 17px;
   display: block;
   position: relative;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 .menu-list_item-link {
   color: #595955;
   display: block;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -209,7 +214,6 @@ body::-webkit-scrollbar {
   margin: 12px 0;
   position: relative;
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   transition: height 0.5s;
@@ -217,7 +221,6 @@ body::-webkit-scrollbar {
 .menu-sublist_item-link {
   color: #595955;
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -504,7 +507,6 @@ body::-webkit-scrollbar {
   position: relative;
   padding: 0;
   grid-area: big-card;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -514,7 +516,6 @@ body::-webkit-scrollbar {
 }
 .shop-block_small-big .small-cards {
   padding: 0;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -557,7 +558,6 @@ body::-webkit-scrollbar {
   position: relative;
   padding: 0;
   grid-area: big-card;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -567,7 +567,6 @@ body::-webkit-scrollbar {
 }
 .shop-block_big-small .small-cards {
   padding: 0;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -707,7 +706,6 @@ body::-webkit-scrollbar {
 }
 .studio-col_item-link {
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 15px;
@@ -741,7 +739,6 @@ body::-webkit-scrollbar {
 }
 
 .deliveryBG {
-  background-image: url(../img/pages/delivery/bg.png);
   min-height: 100vh;
 }
 
@@ -774,7 +771,6 @@ body::-webkit-scrollbar {
   color: #595955;
   border-radius: 50px;
   border: solid 3px #f8c3d9;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 34px;
@@ -796,7 +792,6 @@ body::-webkit-scrollbar {
   height: 50px;
   border-radius: 100px;
   border: solid 3px #f8c3d9;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1285,7 +1280,6 @@ body::-webkit-scrollbar {
   justify-content: center;
   margin-top: 34px;
   margin-left: -10px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 46px;
@@ -1315,12 +1309,53 @@ body::-webkit-scrollbar {
   text-transform: uppercase;
   font-family: "FuturaPT";
   font-size: 20px;
-  margin-bottom: 37px;
+  margin-top: -8px;
+  margin-bottom: 36px;
   letter-spacing: 1.7px;
 }
 .sing-up_form {
+  padding: 0;
   display: flex;
   flex-direction: column;
   width: 540px;
   margin: 0 auto;
+  align-items: center;
+}
+.sing-up_form-input {
+  width: 505px;
+  height: 57px;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  border-radius: 50px;
+  font-family: "FuturaPT";
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  border: solid 1px #ffe100;
+  background-color: #fdfaf3;
+}
+.sing-up_form-input:focus {
+  outline: none;
+  border: solid 1px #f8c3d9;
+}
+.sing-up_form-submit {
+  padding: 0;
+  margin-top: 37px;
+  margin-left: -5px;
+  width: 255px;
+  height: 57px;
+  font-family: "FuturaPT";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #595955;
+  border-radius: 50px;
+  border: none;
+  background-color: #ffe100;
+  text-transform: uppercase;
+}
+.sing-up_sing-in-link {
+  margin: 35px auto;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
