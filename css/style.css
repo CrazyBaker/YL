@@ -1131,9 +1131,6 @@ body::-webkit-scrollbar {
   letter-spacing: 0.9px;
 }
 
-.order, .sing-in {
-  margin-top: 70px;
-}
 .order_form, .sing-in_form {
   display: flex;
 }
