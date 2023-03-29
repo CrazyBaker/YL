@@ -29,11 +29,10 @@ body::-webkit-scrollbar {
   padding: 0;
   min-height: 100%;
   box-sizing: border-box;
-  min-height: calc(100vh - 80px);
 }
 
 .content {
-  min-height: calc(100vh - 210px);
+  min-height: calc(100vh - 275px);
 }
 
 .header {
@@ -1132,30 +1131,30 @@ body::-webkit-scrollbar {
   letter-spacing: 0.9px;
 }
 
-.order {
+.order, .sing-in {
   margin-top: 70px;
 }
-.order_form {
+.order_form, .sing-in_form {
   display: flex;
 }
-.order_form-block {
+.order_form-block, .sing-in_form-block {
   margin-right: 72px;
 }
-.order_title {
+.order_title, .sing-in_title {
   text-align: center;
   font-family: FuturaPT;
   font-size: 20px;
   letter-spacing: 1.7px;
   color: #595955;
 }
-.order_label {
+.order_label, .sing-in_label {
   margin-top: 32px;
   margin-left: 30px;
   font-family: FuturaPT;
   font-size: 20px;
   letter-spacing: 0.6px;
 }
-.order_input {
+.order_input, .sing-in_input {
   margin-top: 18px;
   width: 505px;
   height: 63px;
@@ -1166,31 +1165,31 @@ body::-webkit-scrollbar {
   padding-left: 33px;
   background-color: #fdfaf3;
 }
-.order_select {
+.order_select, .sing-in_select {
   margin-bottom: 10px;
 }
-.order_button {
+.order_button, .sing-in_button {
   margin-top: 125px;
 }
-.order_subscribe {
+.order_subscribe, .sing-in_subscribe {
   margin-top: 22px;
   margin-left: 6px;
   font-family: FuturaPT;
   font-size: 20px;
   letter-spacing: 0.6px;
 }
-.order_checkbox {
+.order_checkbox, .sing-in_checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
   margin: 10px 0 0 20px;
 }
-.order_checkbox + label {
+.order_checkbox + label, .sing-in_checkbox + label {
   position: relative;
   padding: 0 0 0 28px;
   cursor: pointer;
 }
-.order_checkbox + label:before {
+.order_checkbox + label:before, .sing-in_checkbox + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -1200,13 +1199,13 @@ body::-webkit-scrollbar {
   border: solid 1px #ffe100;
   transition: 0.2s;
 }
-.order_checkbox + label:after {
+.order_checkbox + label:after, .sing-in_checkbox + label:after {
   transition: 0.2s;
 }
-.order_checkbox:checked + label:before {
+.order_checkbox:checked + label:before, .sing-in_checkbox:checked + label:before {
   background: #ffe100;
 }
-.order_checkbox:checked + label:after {
+.order_checkbox:checked + label:after, .sing-in_checkbox:checked + label:after {
   background-color: #ffe100;
 }
 
@@ -1308,7 +1307,7 @@ body::-webkit-scrollbar {
   margin-bottom: 10px;
 }
 
-.sing-up_title {
+.sing-up_title, .sing-in_title {
   text-align: center;
   text-transform: uppercase;
   font-family: "FuturaPT";
@@ -1317,7 +1316,7 @@ body::-webkit-scrollbar {
   margin-bottom: 36px;
   letter-spacing: 1.7px;
 }
-.sing-up_form {
+.sing-up_form, .sing-in_form {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -1325,11 +1324,11 @@ body::-webkit-scrollbar {
   margin: 0 auto;
   align-items: center;
 }
-.sing-up_form-input {
+.sing-up_form-input, .sing-in_form-input {
   width: 505px;
   height: 57px;
   padding-left: 30px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   border-radius: 50px;
   font-family: "FuturaPT";
   font-size: 20px;
@@ -1338,11 +1337,11 @@ body::-webkit-scrollbar {
   border: solid 1px #ffe100;
   background-color: #fdfaf3;
 }
-.sing-up_form-input:focus {
+.sing-up_form-input:focus, .sing-in_form-input:focus {
   outline: none;
   border: solid 1px #f8c3d9;
 }
-.sing-up_form-submit {
+.sing-up_form-submit, .sing-in_form-submit {
   padding: 0;
   margin-top: 37px;
   margin-left: -5px;
@@ -1358,8 +1357,22 @@ body::-webkit-scrollbar {
   border: none;
   background-color: #ffe100;
   text-transform: uppercase;
+  cursor: pointer;
 }
-.sing-up_sing-in-link {
+.sing-up_sing-in-link, .sing-in_sing-in-link {
   margin: 35px auto;
   text-align: center;
+  font-family: "FuturaPT";
+  font-size: 14px;
+  letter-spacing: 1.19px;
+  color: #595955;
+}
+.sing-up_sing-in-link:hover, .sing-in_sing-in-link:hover {
+  text-decoration: underline;
+}
+.sing-up_remember, .sing-in_remember {
+  font-family: "FuturaPT";
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  color: #595955;
 }/*# sourceMappingURL=style.css.map */
