@@ -1379,10 +1379,25 @@ body::-webkit-scrollbar {
 }
 .slider_left-button {
   position: absolute;
-  top: 50%;
-  border: 2px solid #595955;
-  width: 16px;
-  height: 16px;
+  transform: rotate(45deg);
+  top: 493px;
+  border: 3px solid #595955;
+  border-right-width: 0;
+  border-top-width: 0;
+  width: 18px;
+  height: 18px;
+  margin-left: 22px;
+}
+.slider_right-button {
+  position: absolute;
+  transform: rotate(225deg);
+  top: 493px;
+  border: 3px solid #595955;
+  border-right-width: 0;
+  border-top-width: 0;
+  width: 18px;
+  height: 18px;
+  margin-left: 492px;
 }
 .slider_main-slide {
   width: 534px;
