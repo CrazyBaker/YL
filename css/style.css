@@ -1372,4 +1372,111 @@ body::-webkit-scrollbar {
   font-size: 20px;
   letter-spacing: 0.6px;
   color: #595955;
+}
+
+.slider {
+  position: relative;
+}
+.slider_left-button {
+  position: absolute;
+  top: 50%;
+  border: 2px solid #595955;
+  width: 16px;
+  height: 16px;
+}
+.slider_main-slide {
+  width: 534px;
+  height: 673px;
+  background-image: url("../img/product/product1.png");
+}
+.slider_img-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  width: 533px;
+}
+.slider_img {
+  position: relative;
+  width: 112px;
+  height: 142px;
+}
+.slider_img-cover {
+  position: absolute;
+  width: 113px;
+  height: 142px;
+  background-color: #fff;
+  opacity: 0.58;
+  transition: opacity 0.5s;
+}
+.slider_img-cover:hover {
+  opacity: 0;
+}
+
+.product {
+  margin-bottom: 108px;
+}
+.product_description-title {
+  margin-top: -7px;
+  font-family: "FuturaPT";
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #595955;
+}
+.product_description-options {
+  margin-top: 54px;
+  margin-left: 3px;
+  font-family: "FuturaPT";
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-align: left;
+  color: #595955;
+}
+.product_description-favorites-icon {
+  width: 38px;
+  height: 36px;
+  margin-top: 35px;
+}
+.product_description-text {
+  height: 580px;
+  margin-top: 22px;
+  font-family: "FuturaPT";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #595955;
+}
+.product_description-price {
+  margin-left: 2px;
+  font-family: "FuturaPT";
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0.9px;
+  color: #595955;
+}
+.product_description-button {
+  margin-top: -9px;
+  box-sizing: border-box;
+  width: 167px;
+  height: 57px;
+  font-family: "FuturaPT";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #595955;
+  text-transform: uppercase;
+  padding-top: 17px;
+  background-color: #f8c3d9;
+  border-radius: 100px;
+}
+
+.product_button-price-wrapper {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
