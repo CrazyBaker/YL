@@ -1387,6 +1387,7 @@ body::-webkit-scrollbar {
   width: 18px;
   height: 18px;
   margin-left: 22px;
+  cursor: pointer;
 }
 .slider_right-button {
   position: absolute;
@@ -1398,6 +1399,7 @@ body::-webkit-scrollbar {
   width: 18px;
   height: 18px;
   margin-left: 492px;
+  cursor: pointer;
 }
 .slider_main-slide {
   width: 534px;

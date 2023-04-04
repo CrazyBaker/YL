@@ -89,8 +89,9 @@ studioListItems.forEach(listItem => {
 
 // Slider
 const coverImgList = document.querySelectorAll(".slider_img-cover");
-let mainSlide = document.querySelector(".slider_main-slide");
-console.log(coverImgList);
+const mainSlide = document.querySelector(".slider_main-slide");
+const sliderLeftButton = document.querySelector('.slider_left-button');
+const sliderRightButton = document.querySelector('.slider_right-button');
 
 function selectImg (e) {
     coverImgList.forEach((coverElement) => coverElement.classList.remove('cover-active'))
@@ -103,9 +104,44 @@ function selectImg (e) {
         }
     })
 
+};
+
+function prevSlide() {
+    for (let i = 0; i < coverImgList.length; ++i) {
+        if (coverImgList[i].classList.contains('cover-active')) {            
+            coverImgList[i].classList.remove('cover-active');
+            if (i - 1 < 0) {
+                coverImgList[coverImgList.length - 1].classList.add('cover-active');
+                mainSlide.attributes.src.nodeValue = `${coverImgList[coverImgList.length - 1].nextElementSibling.attributes.src.nodeValue}`;
+                break;
+            }  
+            mainSlide.attributes.src.nodeValue = `${coverImgList[i-1].nextElementSibling.attributes.src.nodeValue}`;
+            coverImgList[i - 1].classList.add('cover-active');   
+            break;
+        }
+    }
+}
+
+function nextSlide() {
+    for (let i = 0; i < coverImgList.length; ++i) {
+        if (coverImgList[i].classList.contains('cover-active')) {
+            coverImgList[i].classList.remove('cover-active');
+            if (i + 1 > coverImgList.length - 1) {
+                coverImgList[0].classList.add('cover-active');
+                mainSlide.attributes.src.nodeValue = `${coverImgList[0].nextElementSibling.attributes.src.nodeValue}`;
+                break;
+            }  
+            coverImgList[i + 1].classList.add('cover-active');   
+            mainSlide.attributes.src.nodeValue = `${coverImgList[i + 1].nextElementSibling.attributes.src.nodeValue}`;
+            break;
+        }
+    }
 }
 
 coverImgList.forEach((coverElement) => {
         coverElement.addEventListener('click', selectImg);
     }
-)
+);
+
+sliderLeftButton.addEventListener('click', prevSlide);
+sliderRightButton.addEventListener('click', nextSlide);
