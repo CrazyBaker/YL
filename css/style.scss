@@ -1626,12 +1626,11 @@ body {
     margin-left: 492px;
   }
 
-
-  
   &_main-slide {
     width: 534px;
     height: 673px;
-    background-image: url("../img/product/product1.png");
+    background: url("../img/product/product1.png");
+    background-size: cover;
   }
 
   &_img-list {
@@ -1641,24 +1640,34 @@ body {
     width: 533px;
   }
 
-  &_img {
+  &_img-block {
     position: relative;
     width: 112px;
     height: 142px;
     
-    &-cover {
-      position: absolute;
-      width: 113px;
-      height: 142px;
-      background-color: #fff;
-      opacity: 0.58;
-      transition: opacity 0.5s;
+  }
 
-      &:hover {
-        opacity: 0;
-      }
+  &_img-cover {
+    position: absolute;
+    width: 113px;
+    height: 142px;
+    background-color: #fff;
+    opacity: 0.58;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 0;
     }
   }
+
+  &_img {
+    width: 113px;
+    height: 142px;
+  }
+}
+
+.cover-active {
+  opacity: 0;
 }
 
 .product {

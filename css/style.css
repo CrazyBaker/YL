@@ -1402,7 +1402,8 @@ body::-webkit-scrollbar {
 .slider_main-slide {
   width: 534px;
   height: 673px;
-  background-image: url("../img/product/product1.png");
+  background: url("../img/product/product1.png");
+  background-size: cover;
 }
 .slider_img-list {
   display: flex;
@@ -1410,7 +1411,7 @@ body::-webkit-scrollbar {
   margin-top: 18px;
   width: 533px;
 }
-.slider_img {
+.slider_img-block {
   position: relative;
   width: 112px;
   height: 142px;
@@ -1424,6 +1425,14 @@ body::-webkit-scrollbar {
   transition: opacity 0.5s;
 }
 .slider_img-cover:hover {
+  opacity: 0;
+}
+.slider_img {
+  width: 113px;
+  height: 142px;
+}
+
+.cover-active {
   opacity: 0;
 }
 
