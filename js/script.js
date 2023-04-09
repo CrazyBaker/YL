@@ -90,6 +90,7 @@ studioListItems.forEach(listItem => {
 // Slider
 const coverImgList = document.querySelectorAll(".slider_img-cover");
 const mainSlide = document.querySelector(".slider_main-slide");
+const slideWrapper = document.querySelector(".slider_main-wrapper");
 const sliderLeftButton = document.querySelector('.slider_left-button');
 const sliderRightButton = document.querySelector('.slider_right-button');
 
@@ -112,11 +113,11 @@ function prevSlide() {
             coverImgList[i].classList.remove('cover-active');
             if (i - 1 < 0) {
                 coverImgList[coverImgList.length - 1].classList.add('cover-active');
-                mainSlide.attributes.src.nodeValue = `${coverImgList[coverImgList.length - 1].nextElementSibling.attributes.src.nodeValue}`;
+                slideWrapper.style.right = (coverImgList.length - 1) * 534 + "px"
                 break;
             }  
-            mainSlide.attributes.src.nodeValue = `${coverImgList[i-1].nextElementSibling.attributes.src.nodeValue}`;
-            coverImgList[i - 1].classList.add('cover-active');   
+            coverImgList[i - 1].classList.add('cover-active');  
+            slideWrapper.style.right = Number(slideWrapper.style.right.substr(0, slideWrapper.style.right.length - 2)) - 534 + "px"; 
             break;
         }
     }
@@ -128,11 +129,11 @@ function nextSlide() {
             coverImgList[i].classList.remove('cover-active');
             if (i + 1 > coverImgList.length - 1) {
                 coverImgList[0].classList.add('cover-active');
-                mainSlide.attributes.src.nodeValue = `${coverImgList[0].nextElementSibling.attributes.src.nodeValue}`;
+                slideWrapper.style.right = 0 + "px"
                 break;
             }  
-            coverImgList[i + 1].classList.add('cover-active');   
-            mainSlide.attributes.src.nodeValue = `${coverImgList[i + 1].nextElementSibling.attributes.src.nodeValue}`;
+            coverImgList[i + 1].classList.add('cover-active'); 
+            slideWrapper.style.right = Number(slideWrapper.style.right.substr(0, slideWrapper.style.right.length - 2)) + 534 + "px"; 
             break;
         }
     }

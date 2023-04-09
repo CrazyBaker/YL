@@ -1402,10 +1402,24 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 .slider_main-slide {
+  position: relative;
   width: 534px;
   height: 673px;
   background: url("../img/product/product1.png");
   background-size: cover;
+  transition: right 0.5s;
+}
+.slider_main-slide-list {
+  width: 534px;
+  height: 673px;
+  display: flex;
+  overflow: hidden;
+}
+.slider_main-wrapper {
+  position: relative;
+  right: 0px;
+  transition: right 0.8s;
+  display: flex;
 }
 .slider_img-list {
   display: flex;
