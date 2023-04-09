@@ -46,7 +46,6 @@ const studioListItems = document.querySelectorAll(".studio-col_item-link");
 
 function toggleVisibleCategoty(e) {
     const category = e.target.dataset.category;
-    // FIXME: есть боооольшие сомнения по поводу поиска элемента следующим образом
     const menuImg = document.querySelector(".menu_img-" + category);
     const isVisible = menuImg.classList.contains("invisible");
 
