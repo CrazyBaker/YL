@@ -90,12 +90,12 @@ studioListItems.forEach(listItem => {
 const favoriteIcon = document.querySelector(".product_description-favorites-icon");
 
 function toggleFavoriteIcon (e) {
-    const isActive = e.target.classList.contains("product_description-favorites-icon_active");
+    const isActive = e.target.classList.contains("product_description-favorites-icon_clicked");
     
     if(isActive) {
-        e.target.classList.remove("product_description-favorites-icon_active");
+        e.target.classList.remove("product_description-favorites-icon_clicked");
     } else {
-        e.target.classList.add("product_description-favorites-icon_active");
+        e.target.classList.add("product_description-favorites-icon_clicked");
     }
 }
 
@@ -161,5 +161,33 @@ coverImgList.forEach((coverElement) => {
     }
 );
 
-sliderLeftButton.addEventListener('click', prevSlide);
-sliderRightButton.addEventListener('click', nextSlide);
+if(sliderLeftButton) {
+    sliderLeftButton.addEventListener('click', prevSlide);
+}
+
+if(sliderRightButton) {
+    sliderRightButton.addEventListener('click', nextSlide);
+}
+
+const privacyPolicyListItems = document.querySelectorAll(".privacy-policy_link");
+console.log(privacyPolicyListItems);
+
+privacyPolicyListItems.forEach(listItem => {
+
+    listItem.addEventListener('click', toggleVisiblePolicy, true);
+});
+
+function toggleVisiblePolicy(e) {
+
+    if (e.target.nextElementSibling.style.height === "0px") {
+        e.target.nextElementSibling.style.height = `${ e.target.nextElementSibling.scrollHeight }px`
+        e.target.classList.add("privacy-policy_link_open");
+        e.target.classList.remove("privacy-policy_link_close");
+    } else {
+        e.target.nextElementSibling.style.height = `${ e.target.nextElementSibling.scrollHeight }px`;
+        window.getComputedStyle(e.target.nextElementSibling, null).getPropertyValue("height");
+        e.target.nextElementSibling.style.height = "0";
+        e.target.classList.remove("privacy-policy_link_open");
+        e.target.classList.add("privacy-policy_link_close");
+    }
+}

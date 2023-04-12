@@ -1711,27 +1711,6 @@ body {
       color: #595955;
     }
 
-    &-favorites-icon {
-      width: 38px;
-      height: 36px;
-      margin-top: 35px;
-      transition: filter 0.5s;
-      filter: brightness(110%);
-
-      &:hover {
-        filter: brightness(90%)
-      }
-
-      &_active {
-        filter: brightness(100%);
-        animation: heartbeat 1s infinite;
-
-        &:hover {
-          filter: brightness(110%)
-        }
-      }
-    }
-
     @keyframes heartbeat {
       0% {
         transform: scale( 1 );    
@@ -1741,6 +1720,22 @@ body {
       } 
       40% {
         transform: scale( 1.4 ) 
+      }
+    }
+
+    &-favorites-icon {
+      width: 38px;
+      height: 36px;
+      margin-top: 35px;
+      transition: filter 0.5s;
+      filter: brightness(100%);
+
+      &:hover {
+        animation: heartbeat 1s infinite;
+      }
+
+      &_clicked {
+        filter: brightness(110%);
       }
     }
 
@@ -1795,4 +1790,77 @@ body {
 .product_button-price-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.privacy-policy {
+
+  &_title {
+    font-family: 'FuturaPT';
+    font-size: 20px;
+    color: #595955;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+
+  }
+
+  &-text {
+    transition: height 1s ease-out, opacity 0.6s ease-out;
+    overflow: hidden;
+    font-family: 'FuturaPT';
+    font-size: 20px;
+    color: #595955;
+    justify-content: center;
+    align-items: center;
+    margin-left: -37px;
+    line-height: 25px;
+    letter-spacing: 1.7px;
+    height: 0px;
+    font-weight: 300;
+  }
+
+  &_link {
+    color: #595955;
+    font-family: 'FuturaPT';
+    font-size: 20px;
+    color: #595955;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    letter-spacing: 1.7px;
+    cursor: pointer;
+
+    &_open {
+      &:before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-right: 2px solid;
+        border-top: 2px solid;
+        transform: rotate(135deg);
+        left: calc(100% + 25px);
+        top: 9px;
+        transition: transform 0.2s ease-in-out ;
+      }
+    }
+  
+    &_close {
+      &:before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-right: 2px solid;
+        border-top: 2px solid;
+        transform: rotate(45deg);
+        left: calc(100% + 25px);;
+        top: 9px;
+        transition: transform 0.4s ease-in-out;
+      }
+    }
+  }
 }
