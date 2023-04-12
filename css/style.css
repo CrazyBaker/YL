@@ -1477,6 +1477,29 @@ body::-webkit-scrollbar {
   width: 38px;
   height: 36px;
   margin-top: 35px;
+  transition: filter 0.5s;
+  filter: brightness(110%);
+}
+.product_description-favorites-icon:hover {
+  filter: brightness(90%);
+}
+.product_description-favorites-icon_active {
+  filter: brightness(100%);
+  animation: heartbeat 1s infinite;
+}
+.product_description-favorites-icon_active:hover {
+  filter: brightness(110%);
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1.4);
+  }
 }
 .product_description-text {
   height: 580px;
@@ -1515,6 +1538,10 @@ body::-webkit-scrollbar {
   background-color: #f8c3d9;
   border-radius: 100px;
   cursor: pointer;
+  transition: filter 0.5s;
+}
+.product_description-button:hover {
+  filter: brightness(110%);
 }
 
 .product_button-price-wrapper {

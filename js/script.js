@@ -86,6 +86,24 @@ studioListItems.forEach(listItem => {
     listItem.addEventListener('mouseout', toggleStudioCategoty, true);
 });
 
+//Product favorite-icon
+const favoriteIcon = document.querySelector(".product_description-favorites-icon");
+
+function toggleFavoriteIcon (e) {
+    const isActive = e.target.classList.contains("product_description-favorites-icon_active");
+    
+    if(isActive) {
+        e.target.classList.remove("product_description-favorites-icon_active");
+    } else {
+        e.target.classList.add("product_description-favorites-icon_active");
+    }
+}
+
+if(favoriteIcon) {
+    favoriteIcon.addEventListener('click',toggleFavoriteIcon);
+}
+
+
 // Slider
 const coverImgList = document.querySelectorAll(".slider_img-cover");
 const mainSlide = document.querySelector(".slider_main-slide");
