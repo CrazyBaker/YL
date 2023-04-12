@@ -439,6 +439,7 @@ body::-webkit-scrollbar {
 .footer {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 26px;
 }
 .footer_nav-list {
   display: flex;
