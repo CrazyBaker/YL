@@ -335,7 +335,7 @@ body {
       border-right: 2px solid;
       border-top: 2px solid;
       transform: rotate(135deg);
-      left: 75px;
+      left: calc(-25% + 135px);
       top: 9px;
       transition: transform 0.2s ease-in-out ;
     }

@@ -170,7 +170,6 @@ if(sliderRightButton) {
 }
 
 const privacyPolicyListItems = document.querySelectorAll(".privacy-policy_link");
-console.log(privacyPolicyListItems);
 
 privacyPolicyListItems.forEach(listItem => {
 
