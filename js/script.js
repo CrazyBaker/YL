@@ -112,16 +112,13 @@ const sliderLeftButton = document.querySelector('.slider_left-button');
 const sliderRightButton = document.querySelector('.slider_right-button');
 
 function selectImg (e) {
-    coverImgList.forEach((coverElement) => coverElement.classList.remove('cover-active'))
-    e.target.classList.add("cover-active");
+    coverImgList.forEach((coverElement, index) => coverElement.classList.remove('cover-active'))
+    e.target.classList.add('cover-active');
 
-    coverImgList.forEach((coverElement) => {
-        if (coverElement.classList.contains('cover-active')) {
-            mainSlide.attributes.src.nodeValue = `${e.target.nextElementSibling.attributes.src.nodeValue}`;
-            mainSlide.style.backgroundSize = 'cover';
-        }
-    })
-
+        if(e.target.classList.contains("cover-active")) {
+            const index = [...coverImgList].indexOf(e.target);
+            slideWrapper.style.right =  534 * index + "px"
+        }        
 };
 
 function prevSlide() {
@@ -146,11 +143,13 @@ function nextSlide() {
             coverImgList[i].classList.remove('cover-active');
             if (i + 1 > coverImgList.length - 1) {
                 coverImgList[0].classList.add('cover-active');
-                slideWrapper.style.right = 0 + "px"
+                slideWrapper.style.right = 0 + "px";
+                console.log(`coverImgList[${i}]`);
                 break;
             }  
             coverImgList[i + 1].classList.add('cover-active'); 
             slideWrapper.style.right = Number(slideWrapper.style.right.substr(0, slideWrapper.style.right.length - 2)) + 534 + "px"; 
+            console.log(`coverImgList[${i}]`)
             break;
         }
     }

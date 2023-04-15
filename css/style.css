@@ -1409,6 +1409,7 @@ body::-webkit-scrollbar {
   background: url("../img/product/product1.png");
   background-size: cover;
   transition: right 0.5s;
+  background-size: cover;
 }
 .slider_main-slide-list {
   width: 534px;
