@@ -1546,6 +1546,9 @@ body::-webkit-scrollbar {
   justify-content: space-between;
 }
 
+.privacy-policy_list:last-child {
+  margin-bottom: 34px;
+}
 .privacy-policy_title {
   font-family: "FuturaPT";
   font-size: 20px;
@@ -1570,6 +1573,7 @@ body::-webkit-scrollbar {
   letter-spacing: 1.7px;
   height: 0px;
   font-weight: 300;
+  margin-top: 15px;
 }
 .privacy-policy_link {
   color: #595955;
@@ -1603,7 +1607,7 @@ body::-webkit-scrollbar {
   border-top: 2px solid;
   transform: rotate(45deg);
   left: calc(100% + 25px);
-  top: 9px;
+  top: 12px;
   transition: transform 0.4s ease-in-out;
 }
 

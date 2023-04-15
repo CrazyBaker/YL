@@ -1794,6 +1794,12 @@ body {
 
 .privacy-policy {
 
+  &_list {
+    &:last-child {
+      margin-bottom: 34px;
+    }
+  }
+
   &_title {
     font-family: 'FuturaPT';
     font-size: 20px;
@@ -1820,6 +1826,7 @@ body {
     letter-spacing: 1.7px;
     height: 0px;
     font-weight: 300;
+    margin-top: 15px;
   }
 
   &_link {
@@ -1858,7 +1865,7 @@ body {
         border-top: 2px solid;
         transform: rotate(45deg);
         left: calc(100% + 25px);;
-        top: 9px;
+        top: 12px;
         transition: transform 0.4s ease-in-out;
       }
     }
