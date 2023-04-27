@@ -761,6 +761,7 @@ body::-webkit-scrollbar {
   font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: 32px;
+  color: #595955;
 }
 .delivery-block_text {
   font-family: FuturaPT;
@@ -781,6 +782,7 @@ body::-webkit-scrollbar {
   margin-left: -38px;
   padding-left: 34px;
   background-color: #f8c3d9;
+  margin-top: 28px;
 }
 .delivery-block_filled_text {
   font-family: FuturaPT;
@@ -914,6 +916,7 @@ body::-webkit-scrollbar {
   font-family: FuturaPT;
   font-size: 20px;
   margin-bottom: 88px;
+  color: #595955;
 }
 .contacts-info_map-img {
   padding: 0;
