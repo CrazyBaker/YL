@@ -890,9 +890,14 @@ body {
 }
 
 .delivery-block {
-  margin-bottom: 97px;
+  margin-bottom: 134px;
   &_img {
-    margin-top: 54px;
+    margin-top: 36px;
+
+    img {
+      width: 112px;
+      height: 112px;
+    }
   }
 
   &_description {
@@ -989,6 +994,7 @@ body {
     letter-spacing: 0.6px;
     margin-left: 28px;
     margin-bottom: 8px;
+    color: #595955;
   }
 
   &_input {
@@ -1443,7 +1449,6 @@ body {
       font-family: FuturaPT;
       font-size: 30px;
       font-weight: 900;
-      color: #595955;
       letter-spacing: 0.9px;
       color: #595955;
       line-height: 1;
@@ -1477,7 +1482,8 @@ body {
       font-size: 14px;
       font-weight: 600;
       letter-spacing: 0.7px;
-
+      color: #595955;
+      cursor: pointer;
 
       &:hover {
         background-color: #ffe200;

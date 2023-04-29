@@ -747,10 +747,14 @@ body::-webkit-scrollbar {
 }
 
 .delivery-block {
-  margin-bottom: 97px;
+  margin-bottom: 134px;
 }
 .delivery-block_img {
-  margin-top: 54px;
+  margin-top: 36px;
+}
+.delivery-block_img img {
+  width: 112px;
+  height: 112px;
 }
 .delivery-block_description {
   margin-top: -24px;
@@ -839,6 +843,7 @@ body::-webkit-scrollbar {
   letter-spacing: 0.6px;
   margin-left: 28px;
   margin-bottom: 8px;
+  color: #595955;
 }
 .questions-form_input {
   width: 390px;
@@ -1234,7 +1239,6 @@ body::-webkit-scrollbar {
   font-family: FuturaPT;
   font-size: 30px;
   font-weight: 900;
-  color: #595955;
   letter-spacing: 0.9px;
   color: #595955;
   line-height: 1;
@@ -1265,6 +1269,8 @@ body::-webkit-scrollbar {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.7px;
+  color: #595955;
+  cursor: pointer;
 }
 .pressa_item-button:hover {
   background-color: #ffe200;
