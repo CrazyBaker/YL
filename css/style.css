@@ -1024,6 +1024,7 @@ body::-webkit-scrollbar {
   font-weight: 900;
   line-height: 23px;
   letter-spacing: 1px;
+  color: #595955;
 }
 .cart_item-description_country, .cart_item-description_size {
   font-family: FuturaPT;
