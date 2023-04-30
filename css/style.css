@@ -1071,6 +1071,7 @@ body::-webkit-scrollbar {
   font-size: 30px;
   font-weight: 900;
   white-space: nowrap;
+  color: #595955;
 }
 .cart_line {
   background-color: #ffe100;
@@ -1139,6 +1140,7 @@ body::-webkit-scrollbar {
   font-size: 30px;
   font-weight: 900;
   letter-spacing: 0.9px;
+  color: #595955;
 }
 
 .order_form, .sing-in_form {
