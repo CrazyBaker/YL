@@ -1124,6 +1124,7 @@ body {
     font-size: 30px;
     font-weight: 900;
     padding-left: 4px;
+    color: #595955;
   }
 
   &_items {
@@ -1143,6 +1144,7 @@ body {
       font-size: 20px;
       font-weight: 900;
       line-height: 20px;
+      color: #595955;
     }
 
     &-country {
@@ -1155,6 +1157,7 @@ body {
       font-family: FuturaPT;
       font-size: 14px;
       font-weight: 900;
+      color: #595955;
     }
   }
 }
@@ -1298,6 +1301,8 @@ body {
       border-radius: 100px;
       align-items: center;
       justify-content: center;
+      color: #595955;
+      cursor: pointer;
     }
   }
 

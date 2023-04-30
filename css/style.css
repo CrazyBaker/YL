@@ -964,6 +964,7 @@ body::-webkit-scrollbar {
   font-size: 30px;
   font-weight: 900;
   padding-left: 4px;
+  color: #595955;
 }
 .recomendation_items {
   display: flex;
@@ -983,6 +984,7 @@ body::-webkit-scrollbar {
   font-size: 20px;
   font-weight: 900;
   line-height: 20px;
+  color: #595955;
 }
 .recomendation_item-country {
   margin-top: 34px;
@@ -994,6 +996,7 @@ body::-webkit-scrollbar {
   font-family: FuturaPT;
   font-size: 14px;
   font-weight: 900;
+  color: #595955;
 }
 
 .cart_title {
@@ -1115,6 +1118,8 @@ body::-webkit-scrollbar {
   border-radius: 100px;
   align-items: center;
   justify-content: center;
+  color: #595955;
+  cursor: pointer;
 }
 .cart_promo-price {
   margin-left: 5px;
