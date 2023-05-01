@@ -1363,6 +1363,7 @@ body {
   }
   &_input {
     margin-top: 18px;
+    padding-right: 30px;
     width: 505px;
     height: 63px;
     border: solid 1px #ffe100;
@@ -1371,10 +1372,16 @@ body {
     font-weight: 300;
     padding-left: 33px;
     background-color: #fdfaf3;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
   }
 
   &_select {
     margin-bottom: 10px;
+    background-image: url("../img/pages/cart/select-item.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
   }
 
   &_button {

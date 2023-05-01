@@ -1170,6 +1170,7 @@ body::-webkit-scrollbar {
 }
 .order_input, .sing-in_input {
   margin-top: 18px;
+  padding-right: 30px;
   width: 505px;
   height: 63px;
   border: solid 1px #ffe100;
@@ -1178,9 +1179,15 @@ body::-webkit-scrollbar {
   font-weight: 300;
   padding-left: 33px;
   background-color: #fdfaf3;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
 }
 .order_select, .sing-in_select {
   margin-bottom: 10px;
+  background-image: url("../img/pages/cart/select-item.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
 .order_button, .sing-in_button {
   margin-top: 125px;
