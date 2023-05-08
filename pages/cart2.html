@@ -229,29 +229,45 @@
       </div>
         <div class="row order">
           <div class="order_title">ОФОРМЛЕНИЕ ЗАКАЗА</div>
-          <ul class="col-12 order_form">
-            <li class="col-6 order_form-block">
+          <form class="col-12 order_form">
+            <div class="col-6 order_form-block">
               <div class="order_item">
                 <div class="order_label">Способ оплаты:</div>
-                <select class="order_input order_select" type="option" class="order_input">Наличные
-                  <option value="cash">Наличные</option>
-                  <option value="card">Карта</option>
-                </select>
+                <div class="payment-method_select _select" data-state="">
+                  <div class="payment-method_select_title _select_title" data-default="Option 1">Наличные</div>
+                  <div class="payment-method_select_content _select_content">
+                    <input id="singleSelect1" class="payment-method_select_input _select_input" type="radio" name="singleSelect" />
+                    <label for="singleSelect1" class="payment-method_select_label _select_label">Наличные</label>
+                    <input id="singleSelect2" class="payment-method_select_input _select_input" type="radio" name="singleSelect" />
+                    <label for="singleSelect2" class="payment-method_select_label _select_label">Наличные</label>
+                    <input id="singleSelect3" class="payment-method_select_input _select_input" type="radio" name="singleSelect" />
+                    <label for="singleSelect3" class="payment-method_select_label _select_label">Банковская карта</label>
+                    <input id="singleSelect3" class="payment-method_select_input _select_input" type="radio" name="singleSelect" />
+                    <label for="singleSelect3" class="payment-method_select_label _select_label">Банковский перевод</label>
+                  </div>
+                </div>
               </div>
               <div class="order_item">
                 <div class="order_label">Получение заказа</div>
-                <select class="order_input order_select" type="option" class="order_input">Получение заказа:
-                  <option value="pickup">Самовывоз</option>
-                  <option value="delivery">Доставка</option>
-                </select>
+                <div class="delivery-option_select _select" data-state="">
+                  <div class="delivery-option_select_title _select_title" data-default="Option 1">Самовывоз</div>
+                  <div class="delivery-option_select_content _select_content">
+                    <input id="singleSelect1" class="delivery-option_select_input _select_input" type="radio" name="singleSelect" />
+                    <label for="singleSelect1" class="delivery-option_select_label _select_label">Самовывоз</label>
+                    <input id="singleSelect2" class="delivery-option_select_input _select_input" type="radio" name="singleSelect" />
+                    <label for="singleSelect2" class="delivery-option_select_label _select_label">Самовывоз</label>
+                    <input id="singleSelect2" class="delivery-option_select_input _select_input" type="radio" name="singleSelect" />
+                    <label for="singleSelect2" class="delivery-option_select_label _select_label">Доставка</label>
+                  </div>
+                </div>
               </div>
               <div class="order_button">
                 <a href="#">
                   <div class="cart_checkout_small">оформить заказ</div>
                 </a>
               </div>
-            </li>
-            <li class="col-6 order_form-block">
+            </div>
+            <div class="col-6 order_form-block">
               <div>
                 <div class="order_label">Почтовый адрес:</div>
                 <input type="text" class="order_input" placeholder="olja.sunny@rambler.ru"></input>
@@ -268,8 +284,8 @@
                 <div class="order_label">Номер телефона:</div>
                 <input type="text" class="order_input" placeholder="Введите номер телефона"></input>
               </div>
-            </li>
-          </ul>
+            </div>
+          </form>
         </div>
       <div class="row recomendation">
         <div class="recomendation_title">Возможно, вам понравится</div>

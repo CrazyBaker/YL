@@ -189,3 +189,34 @@ function toggleVisiblePolicy(e) {
         e.target.classList.add("privacy-policy_link_close");
     }
 }
+
+//selectors
+const  selectorControl = function(selectorName) {
+    const selectSingle = document.querySelector(`.${selectorName}_select`);
+    const selectSingle_title = selectSingle.querySelector(`.${selectorName}_select_title`);
+    const selectSingle_labels = selectSingle.querySelectorAll(`.${selectorName}_select_label`);
+
+    // Toggle menu
+    if (selectSingle_title) {
+        selectSingle_title.addEventListener('click', () => {
+            if ('active' === selectSingle.getAttribute('data-state')) {
+                selectSingle.setAttribute('data-state', '');
+            } else {
+                selectSingle.setAttribute('data-state', 'active');
+            }
+        });
+    }
+
+    // Close when click to option
+    if (selectSingle_labels) {
+        for (let i = 0; i < selectSingle_labels.length; i++) {
+            selectSingle_labels[i].addEventListener('click', (evt) => {
+                selectSingle_title.textContent = evt.target.textContent;
+                selectSingle.setAttribute('data-state', '');
+            });
+        }
+    }
+}
+
+selectorControl("payment-method");
+selectorControl("delivery-option");
