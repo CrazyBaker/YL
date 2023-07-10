@@ -592,8 +592,13 @@ body {
 //shop
 .product-cards {
   margin-bottom: 40px;
+  padding: 0;
 }
-// FIXME: дублируются стили, пофиксить это гавно 
+
+.big-card_wrapper {
+  padding: 0;
+}
+ 
 .shop-block_small-big {  
   margin: 0;
   height: 722;
@@ -2108,3 +2113,33 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+
+  .header_language-icon {
+    padding-left: 20px;
+  }
+
+  .shop-block_small-big, .shop-block_big-small {
+    padding: 0 125px;
+
+    .big-card {
+      height: 577px;
+    }
+
+    .big-card_img {
+      width: 444px;
+      height: 100%;
+      background-size: cover;
+    }
+    
+    .small-card-1, .small-card-2 {
+      width: 444px;
+      height: 276px;
+
+      &_img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
